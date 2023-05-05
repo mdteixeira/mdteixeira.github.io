@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo-micro.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>md.teixeira</title>
+
+</head>
+
+
+<body class="bg-dark" id="inicio">
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo do site -->
+                <a class="navbar-brand d-lg-none" href="#inicio">
+                    <img id="logo__" src="./images/logo-long.png" alt="logo" class="d-lg-none">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cursos">Cursos</a>
+                        </li>
+
+                        <!-- Logo do Site -->
+                        <a href="#inicio">
+                        <img src="./images/logo-long.png" class="d-none d-lg-block" id="logo_"
+                            style="text-align: center" ;>
+                        </a>
+                        <li class="nav-item">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carrosselPrincipal" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators d-none d-lg-flex">
+            <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="texto">
+                <h1 class="display-1 d-lg-block d-none">Seja bem-vindo! 👋</h1>
+            </div>
+
+
+            <div class="carousel-item active">
+                <img src="./images/bg.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-white">
+                    <h5>Estudante de Ciência da Computação</h5>
+                    <p>Cursando o <strong>primeiro</strong> de 8 semestres</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/bg.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-white">
+                    <h5>Formado em Automação Industrial</h5>
+                    <p>Pelo Liceu de Artes e Ofícios como <strong>Bolsista Integral</strong></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/bg.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-white">
+                    <h5>Procurando oportunidades</h5>
+                    <p>Como <strong>Estagiário</strong> ou <strong>Dev Júnior</strong></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev z-3 d-none d-lg-flex" type="button" data-bs-target="#carrosselPrincipal"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next z-3 d-none d-lg-flex" type="button" data-bs-target="#carrosselPrincipal"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <hr>
+    </div>
+
+    <main class="text-white" data-bs-theme="dark">
+        <article id="cursos">
+            <h2 class="py-3 text-center">Alguns cursos que fiz</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+                <div class="col">
+                    <section id="card_1">
+                        <div class="card">
+                            <img src="./images/curso_ip.png" class="card-img-top" alt="Logo Python" />
+                            <div class="card-body">
+                                <h5 class="card-title">Introdução à Ciência da Computação com Python Partes 1 e 2</h5>
+                                <p class="card-text">
+                                    <span class="badge">Python</span>
+                                    <span class="badge">Algoritmos</span>
+                                    <span class="badge">Lógica de programação</span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a
+                                        href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos-2"
+                                        target="_blank" rel="noopener noreferrer">Link para o curso</a></small>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section id="card_2">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/curso_bp.png" class="card-img-top" alt="Banco Pan" />
+                            <div class="card-body">
+                                <h5 class="card-title">Bootcamp online - Banco PAN Java Developer</h5>
+                                <p class="card-text">
+                                    <span class="badge">Java</span>
+                                    <span class="badge">MySQL</span>
+                                    <span class="badge">Equipes ágeis</span>
+                                    <span class="badge">API REST</span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href="https://web.dio.me/track/banco-pan-java-developer"
+                                        target="_blank" rel="noopener noreferrer">Link para o curso</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="col">
+                    <section id="card_3">
+                        <div class="card">
+                            <img src="./images/curso_ios.png" class="card-img-top" alt="Curso IOS" />
+                            <div class="card-body">
+                                <h5 class="card-title">Curso presencial <br> Programação Web</h5>
+                                <p class="card-text">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">CSS</span>
+                                    <span class="badge">JavaScript</span>
+                                    <span class="badge">GitHub</span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"><a href="https://ios.org.br/cursos-ios#programacaoweb"
+                                        target="_blank" rel="noopener noreferrer">Link para o curso</a></small>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+
+        <article id="conhecimentos">
+            <h2 class="mt-2 text-center px-3 py-3">Alguns conhecimentos que adquiri nos meus estudos</h2>
+
+            <div class="accordion mx-5 px-5" id="acord-conhecimentos">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Java
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#acord-conhecimentos">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">SpringBoot</li>
+                                <li class="list-group-item">Maven</li>
+                                <li class="list-group-item">JUnit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Front-End
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show show" data-bs-parent="#acord-conhecimentos">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">MySQL</li>
+                                <li class="list-group-item">MongoDB</li>
+                                <li class="list-group-item">NoSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            SQL
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#acord-conhecimentos">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">React</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">User Experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <footer>
+            <article id="contato" class="bg-black p-3 mt-5">
+                <h2 class="mt-2 text-center px-3">Entre em contato comigo!</h2>
+                <hr>
+                <section id="redes" class="text-center p-4">
+                    <a href="https://linkedin.com/in/mdteixeira15" target="_blank"
+                        rel="noopener noreferrer">
+                        <img id="linkedin" class="img_social" src="./images/social/linkedin.png" alt="linkedin">
+
+                    </a>
+                    <a href="https://GitHub.com/mdteixeira" target="_blank"
+                        rel="noopener noreferrer"><img id="github" class="img_social" src="./images/social/github.png"
+                            alt="github">
+                    </a>
+                    <a ref="mailto:matheusdiegoteixeira@gmail.com">
+                        <img id="mail" class="img_social" src="./images/social/mail.png" alt="mail">
+
+                    </a>
+                    <a href="http://https://wa.me/5511993602212" target="_blank"
+                        rel="noopener noreferrer"><img id="whatsapp" class="img_social"
+                            src="./images/social/whatsapp.png" alt="whatsapp">
+                    </a>
+                </section>
+                <section id="copy" class="pt-3">
+                    <small>® Feito por Matheus Diego Teixeira</small>
+                </section>
+            </article>
+        </footer>
+    </main>
+</body>
+
+<a class="btn btn-secondary" id="toTop" href="#inicio"><img id="img1" src="./images/to-top.png" alt="toTop"></a>
+
+</html>
