@@ -90,3 +90,9 @@ html {
 .accordion-button {
     color: rgb(171, 132, 255)!important
 }
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
