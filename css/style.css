@@ -1,6 +1,45 @@
-html {
-    scroll-behavior: smooth;
+@keyframes moveBg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
+
+
+html {
+    background-size: 30% 30%;
+    animation: moveBg 45s none infinite;
+    scroll-behavior: smooth;
+    background-color: black !important;
+    background-image: url(/images/bg.jpeg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+body {
+    background-color: transparent !important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50% !important;
+    }
+
+    50% {
+        background-position: 100% 50% !important;
+    }
+
+    100% {
+        background-position: 0% 50% !important;
+    }
+}
+
 
 .texto {
     color: #fff;
@@ -22,6 +61,7 @@ html {
     margin: 5px;
     height: 2em;
 }
+
 #logo__ {
     margin: 5px;
     height: 1.3em;
@@ -31,12 +71,18 @@ html {
     width: auto;
 }
 
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 50vh;
+}
+
 .carousel-caption {
-    top: 35%;
+    top: 55%;
 }
 
 .carousel-indicators {
-    top: 50%
+    bottom: 10%
 }
 
 #toTop {
@@ -79,8 +125,8 @@ html {
 }
 
 .text-bg-danger {
-    color: #fff!important;
-    background-color: RGBA(140,90,250,var(--bs-bg-opacity,1))!important;
+    color: #fff !important;
+    background-color: RGBA(140, 90, 250, var(--bs-bg-opacity, 1)) !important;
 }
 
 .badge {
@@ -88,10 +134,12 @@ html {
 }
 
 .accordion-button {
-    color: rgb(171, 132, 255)!important
+    color: rgb(171, 132, 255) !important
 }
 
-.navbar-toggler, .navbar-toggler:active, .navbar-toggler-icon:focus {
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
