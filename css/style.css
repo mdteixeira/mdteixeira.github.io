@@ -1,22 +1,21 @@
 @keyframes moveBg {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 	}
 	50% {
 		background-position: 100% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 0% 100%;
 	}
 }
 
-
 html {
-    background-size: 30% 30%;
-    animation: moveBg 45s none infinite;
+    background-size: 50% 1000%;
+    animation: moveBg 45s ease infinite;
     scroll-behavior: smooth;
     background-color: black !important;
-    background-image: url(/images/bg.jpeg) !important;
+    background-image: url(/images/bg.png) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -25,21 +24,6 @@ html {
 body {
     background-color: transparent !important;
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50% !important;
-    }
-
-    50% {
-        background-position: 100% 50% !important;
-    }
-
-    100% {
-        background-position: 0% 50% !important;
-    }
-}
-
 
 .texto {
     color: #fff;
@@ -143,4 +127,9 @@ body {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+}
+
+.card {
+    z-index: 3;
+    box-shadow: 0 10px 15px 2px rgba(30, 30, 30, 0.75);
 }
