@@ -10,11 +10,8 @@
 	}
 }
 
-* {
-    scroll-behavior: smooth;
-}
-
 html {
+    scroll-behavior: smooth;
     background-size: 50% 1000%;
     animation: moveBg 45s ease infinite;
     background-color: black !important;
@@ -38,14 +35,8 @@ body {
     text-align: center;
 }
 
-/* .navbar {
-    background-color: rgba(0, 0, 0, 0.45);
-    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.5);
-} */
 
-/* Peguei da internet, pois o backdrop-filter não estava funcionando no celular */
-
-/* se não suportar, vai ficar assim */
+/* se não suportar backdrop-filter, vai ficar assim */
 .navbar {
   background-color: rgba(0, 0, 0, 0.80);
 }
@@ -96,6 +87,11 @@ body {
     height: 45px;
     width: 45px;
     padding: 7px 0 0 0;
+}
+
+#toTop:hover::after {
+    line-height: 200%;
+    content: "Início";
 }
 
 #img1 {
