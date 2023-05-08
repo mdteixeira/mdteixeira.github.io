@@ -21,6 +21,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
+            <script src="js.js"></script>
 
         <header>
             <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
@@ -64,7 +65,7 @@
             </nav>
         </header>
 
-        <div id="carrosselPrincipal" class="carousel slide" data-bs-ride="carousel">
+        <div id="carrosselPrincipal" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
             <div class="carousel-indicators d-lg-flex">
                 <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -113,15 +114,15 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-        <main class="text-white" data-bs-theme="dark">
+        <div class="content" data-bs-theme="dark">
+        <main class="text-white">
             <article id="cursos">
                 <h2 class="py-3 text-center">Alguns cursos que fiz</h2>
 
                 <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
                     <div class="col">
                         <section id="card_1">
-                            <div class="card">
+                            <div class="card shadow">
                                 <img src="./images/curso_ip.png" class="card-img-top" alt="Logo Python" />
                                 <div class="card-body">
                                     <h5 class="card-title">Introdução à Ciência da Computação com Python Partes 1 e 2
@@ -142,7 +143,7 @@
                     </div>
                     <section id="card_2">
                         <div class="col">
-                            <div class="card">
+                            <div class="card shadow">
                                 <img src="./images/curso_bp.png" class="card-img-top" alt="Banco Pan" />
                                 <div class="card-body">
                                     <h5 class="card-title">Bootcamp online - Banco PAN Java Developer</h5>
@@ -163,7 +164,7 @@
                     </section>
                     <div class="col">
                         <section id="card_3">
-                            <div class="card">
+                            <div class="card shadow ">
                                 <img src="./images/curso_ios.png" class="card-img-top" alt="Curso IOS" />
                                 <div class="card-body">
                                     <h5 class="card-title">Curso presencial <br> Programação Web</h5>
@@ -188,7 +189,7 @@
             <article id="conhecimentos">
                 <h2 class="mt-2 text-center px-3 py-3">Alguns conhecimentos que adquiri nos meus estudos</h2>
 
-                <div class="accordion px-3" id="acord-conhecimentos">
+                <div class="accordion px-3 shadow" id="acord-conhecimentos">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
@@ -244,11 +245,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
             </article>
             <footer>
                 <article id="contato" class=" p-3 mt-5">
-                    <h2 class="mt-2 text-center px-3">Entre em contato comigo!</h2>
+                    <h2 class="mt-2 text-center px-3 text-white">Entre em contato comigo!</h2>
                     <hr>
                     <section id="redes" class="text-center p-4">
                         <a href="https://linkedin.com/in/mdteixeira15" target="_blank" rel="noopener noreferrer">
