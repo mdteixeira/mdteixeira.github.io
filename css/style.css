@@ -38,11 +38,27 @@ body {
     text-align: center;
 }
 
-.navbar {
+/* .navbar {
     background-color: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(5px);
     box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.5);
+} */
+
+/* Peguei da internet, pois o backdrop-filter não estava funcionando no celular */
+
+/* se não suportar, vai ficar assim */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.80);
 }
+
+/* Se for suportado, vai ficar assim */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.45);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(10px);
+  }
+}
+
 
 #logo_ {
     margin: 5px;
@@ -79,12 +95,11 @@ body {
     bottom: 30px;
     height: 45px;
     width: 45px;
-    border-radius: 100px;
     padding: 7px 0 0 0;
 }
 
 #img1 {
-    filter: invert(100%);
+    filter: brightness(500%);
     height: 30px;
     width: 30px;
     padding: 0;
