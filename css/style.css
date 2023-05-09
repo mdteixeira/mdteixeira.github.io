@@ -68,7 +68,7 @@ body {
 .carousel,
 .carousel-inner,
 .carousel-item {
-    height: 50vh;
+    height: 100vh;
 }
 
 .carousel-caption {
@@ -80,7 +80,8 @@ body {
 }
 
 #toTop {
-    z-index: 0;
+    filter: opacity(0.75);
+    z-index: 1;
     position: fixed;
     right: 30px;
     bottom: 30px;
