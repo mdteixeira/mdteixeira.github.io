@@ -1,162 +1,163 @@
 @keyframes moveBg {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 100%;
-	}
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 html {
-    scroll-behavior: smooth;
-    background-size: 50% 1000%;
-    animation: moveBg 45s ease infinite;
-    background-color: black !important;
-    background-image: url(../images/bg.png) !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+  scroll-behavior: smooth;
+  background-size: 50% 1000%;
+  animation: moveBg 45s ease infinite;
+  background-color: black !important;
+  background-image: url(../images/bg.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 body {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .texto {
-    color: #fff;
-    position: absolute;
-    z-index: 2;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
-
 
 /* se não suportar backdrop-filter, vai ficar assim */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Se for suportado, vai ficar assim */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .navbar {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(10px);
   }
 }
 
-
 #logo_ {
-    margin: 5px;
-    height: 2em;
+  margin: 5px;
+  height: 2em;
 }
 
 #logo__ {
-    margin: 5px;
-    height: 1.3em;
+  margin: 5px;
+  height: 1.3em;
 }
 
 .navbar-brand {
-    width: auto;
+  width: auto;
 }
 
 .carousel,
 .carousel-inner,
 .carousel-item {
-    height: 100vh;
+  height: 100.1vh;
 }
 
 .carousel-caption {
-    top: 55%;
+  top: 55%;
 }
 
 .carousel-indicators {
-    bottom: 10%
+  bottom: 15%;
 }
 
+.click.collapsed .icon {
+    transform: rotate(180deg);
+    transition: .3s ease-in-out;
+    }
+    
 #toTop {
-    filter: opacity(0.75);
-    z-index: 1;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    height: 45px;
-    width: 45px;
-    padding: 7px 0 0 0;
+  filter: opacity(0.75);
+  z-index: 2;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 45px;
+  width: 45px;
+  padding: 7px 0 0 0;
 }
 
 #toTop:hover::after {
-    line-height: 200%;
-    content: "Início";
+  line-height: 200%;
+  content: "Início";
 }
 
 #img1 {
-    filter: brightness(500%);
-    height: 30px;
-    width: 30px;
-    padding: 0;
+  filter: brightness(500%);
+  height: 30px;
+  width: 30px;
+  padding: 0;
 }
 
 #redes * {
-    text-decoration: none;
-    margin: 10px;
+  text-decoration: none;
+  margin: 10px;
 }
 
 #copy {
-    text-align: center;
+  text-align: center;
 }
 
 .img_social {
-    height: 30px;
-    width: 30px;
-    box-sizing: border-box;
-    filter: invert(1);
-    transition: 0.5s;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  filter: invert(1);
+  transition: 0.5s;
 }
 
 .img_social:hover {
-    filter: contrast(5%);
+  filter: contrast(5%);
 }
 
 .text-bg-danger {
-    color: #fff !important;
-    background-color: RGBA(140, 90, 250, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(140, 90, 250, var(--bs-bg-opacity, 1)) !important;
 }
 
 .badge {
-    background-color: rgb(124, 64, 255);
+  background-color: rgb(124, 64, 255);
 }
 
 .accordion-button {
-    color: rgb(171, 132, 255) !important
+  color: rgb(171, 132, 255) !important;
 }
 
 .navbar-toggler,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .card {
-    z-index: 3;
-    border: none !important;
+  z-index: 1;
+  border: none !important;
+  min-height: 500px !important;
 }
 
 .accordion-item {
-    border: none !important;
+  border: none !important;
 }
 
-.card:hover, .accordion-item:hover {
-    scale: 1.01;    
-}
-
-.card {
-    min-height: 475px !important;
+.card:hover,
+.accordion-item:hover {
+  scale: 1.01;
 }
