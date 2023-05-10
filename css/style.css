@@ -158,6 +158,8 @@ body {
 }
 
 .card:hover,
+.card img:hover,
+.card .badge:hover,
 .accordion-item:hover {
   scale: 1.01;
 }
