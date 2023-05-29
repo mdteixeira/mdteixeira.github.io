@@ -10,6 +10,10 @@
   }
 }
 
+:root {
+  --bs-body-font-family: 'Poppins', sans-serif !important;
+}
+
 html {
   scroll-behavior: smooth;
   background-size: 50% 1000%;
@@ -77,11 +81,6 @@ body {
   bottom: 15%;
 }
 
-.click.collapsed .icon {
-    transform: rotate(180deg);
-    transition: .3s ease-in-out;
-    }
-    
 #toTop {
   transition: 0.4s;
   filter: opacity(0.75);
