@@ -150,7 +150,7 @@ body {
 .card {
   z-index: 1;
   border: none !important;
-  min-height: 500px !important;
+  transition: 0.5s;
 }
 
 .accordion-item {
@@ -161,6 +161,12 @@ body {
 .card img:hover,
 .card .badge:hover,
 .accordion-item:hover {
+  transition: 0.5s;
   scale: 1.01;
+}
+
+.card-img-top {
+  transition: 0.4s;
+  align-self: center;
 }
 
