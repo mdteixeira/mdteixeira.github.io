@@ -1,4 +1,4 @@
-@keyframes moveBg {
+/* @keyframes moveBg {
     0% {
         background-position: 0% 0%;
     }
@@ -8,7 +8,7 @@
     100% {
         background-position: 0% 100%;
     }
-}
+} */
 
 :root {
     --bs-body-font-family: 'Poppins', sans-serif !important;
@@ -43,13 +43,13 @@ body {
 }
 
 #carrosselPrincipal {
-    background-color: transparent !important;
-    animation: moveBg 45s ease infinite;
+    /* background-color: transparent !important; */
+    /* animation: moveBg 1s ease infinite; */
+    /* background-size: 1500% 1500%; */
     background-image: url(../images/bg.png) !important;
-    background-size: 150% 150%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    /* background-position: center bottom; */
 }
 
 /* se não suportar backdrop-filter, vai ficar assim */
@@ -243,4 +243,8 @@ body {
 .nav-link.dropdown-toggle.show::after {
     transition: 0.2s;
     transform: rotate(-180deg);
+}
+
+strong {
+    color: whitesmoke;
 }
