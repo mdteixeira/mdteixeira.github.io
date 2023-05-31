@@ -14,19 +14,22 @@
     --bs-body-font-family: 'Poppins', sans-serif !important;
 }
 
+.accordion-button:focus {
+    z-index: 3;
+    box-shadow: none !important;
+    outline: 0;
+}
+
 html {
     scroll-behavior: smooth;
-    background-size: 50% 1000%;
-    animation: moveBg 45s ease infinite;
-    background-color: black !important;
-    background-image: url(../images/bg.png) !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    background: #101010;
 }
 
 body {
     background-color: transparent !important;
+}
+.accordion-button:not(.collapsed) {
+    background-color: black !important;
 }
 
 .texto {
@@ -37,6 +40,16 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+#carrosselPrincipal {
+    background-color: transparent !important;
+    animation: moveBg 45s ease infinite;
+    background-image: url(../images/bg.png) !important;
+    background-size: 150% 150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 /* se não suportar backdrop-filter, vai ficar assim */
@@ -78,7 +91,7 @@ body {
 }
 
 .carousel-indicators {
-    bottom: 15%;
+    bottom: 20%;
 }
 
 #toTop {
@@ -157,12 +170,20 @@ body {
     border: none !important;
 }
 
-.card:hover,
-.card img:hover,
-.card .badge:hover,
-.accordion-item:hover {
+.card .badge:hover {
     transition: 0.5s;
-    scale: 1.01;
+    scale: 1.05;
+    cursor: default;
+}
+
+[data-bs-theme='dark'] .accordion-button::after {
+    filter: brightness(250%);
+}
+
+.accordion-item:hover,
+.card:hover,
+.card img:hover {
+    scale: 1.02;
 }
 
 .card-img-top {
@@ -175,7 +196,7 @@ body {
 }
 
 .navbar-collapse.show {
-    transition: 1.5s cubic-bezier(0.58, 0.3, 0.005, 1)!important;
+    transition: 1.5s cubic-bezier(0.58, 0.3, 0.005, 1) !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -193,22 +214,20 @@ body {
 }
 
 .navbar-collapse.show li {
-
     transition: 0.8s cubic-bezier(0.58, 0.3, 0.005, 1);
     opacity: 1;
     padding: 0;
     margin-bottom: 20px;
-
 }
 
 .show ul li {
-  font-size: 2rem;
-  padding: 1rem 0;
+    font-size: 2rem;
+    padding: 1rem 0;
     &:nth-child(1) {
         transition-delay: 0.75s;
     }
     &:nth-child(2) {
-        transition-delay: 0.60s;
+        transition-delay: 0.6s;
     }
     &:nth-child(3) {
         transition-delay: 0.5s;
@@ -216,4 +235,12 @@ body {
     &:nth-child(4) {
         transition-delay: 0.25s;
     }
+}
+
+.nav-link.dropdown-toggle::after {
+    transition: 0.2s;
+}
+.nav-link.dropdown-toggle.show::after {
+    transition: 0.2s;
+    transform: rotate(-180deg);
 }
