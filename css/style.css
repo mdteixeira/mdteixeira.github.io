@@ -1,172 +1,228 @@
 @keyframes moveBg {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
 :root {
-  --bs-body-font-family: 'Poppins', sans-serif !important;
+    --bs-body-font-family: 'Poppins', sans-serif !important;
 }
 
 html {
-  scroll-behavior: smooth;
-  background-size: 50% 1000%;
-  animation: moveBg 45s ease infinite;
-  background-color: black !important;
-  background-image: url(../images/bg.png) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+    scroll-behavior: smooth;
+    background-size: 50% 1000%;
+    animation: moveBg 45s ease infinite;
+    background-color: black !important;
+    background-image: url(../images/bg.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 body {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .texto {
-  color: #fff;
-  position: absolute;
-  z-index: 2;
-  top: 20%;
-  left: 0;
-  width: 100%;
-  text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 /* se não suportar backdrop-filter, vai ficar assim */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Se for suportado, vai ficar assim */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .navbar {
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(2em);
-    backdrop-filter: blur(10px);
-  }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(3em);
+        backdrop-filter: blur(10px);
+    }
 }
 
 #logo_ {
-  margin: 5px;
-  height: 2em;
+    margin: 5px;
+    height: 2em;
 }
 
 #logo__ {
-  margin: 5px;
-  height: 1.3em;
+    margin: 5px;
+    height: 1.3em;
 }
 
 .navbar-brand {
-  width: auto;
+    width: auto;
 }
 
 .carousel,
 .carousel-inner,
 .carousel-item {
-  height: 100.1vh;
+    height: 100.1vh;
 }
 
 .carousel-caption {
-  top: 55%;
+    top: 55%;
 }
 
 .carousel-indicators {
-  bottom: 15%;
+    bottom: 15%;
 }
 
 #toTop {
-  transition: 0.4s;
-  filter: opacity(0.75);
-  z-index: 2;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  height: 45px;
-  width: 45px;
-  padding: 7px 0 0 0;
+    transition: 0.4s;
+    filter: opacity(0.75);
+    z-index: 2;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 45px;
+    width: 45px;
+    padding: 7px 0 0 0;
 }
 
 #toTop:hover::after {
-  line-height: 200%;
-  content: "Início";
+    line-height: 200%;
+    content: 'Início';
 }
 
 #img1 {
-  filter: brightness(500%);
-  height: 30px;
-  width: 30px;
-  padding: 0;
+    filter: brightness(500%);
+    height: 30px;
+    width: 30px;
+    padding: 0;
 }
 
 #redes * {
-  text-decoration: none;
-  margin: 10px;
+    text-decoration: none;
+    margin: 10px;
 }
 
 #copy {
-  text-align: center;
+    text-align: center;
 }
 
 .img_social {
-  height: 30px;
-  width: 30px;
-  box-sizing: border-box;
-  filter: invert(1);
-  transition: 0.5s;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    filter: invert(1);
+    transition: 0.5s;
 }
 
 .img_social:hover {
-  filter: contrast(5%);
+    filter: contrast(5%);
 }
 
 .text-bg-danger {
-  color: #fff !important;
-  background-color: RGBA(140, 90, 250, var(--bs-bg-opacity, 1)) !important;
+    color: #fff !important;
+    background-color: RGBA(140, 90, 250, var(--bs-bg-opacity, 1)) !important;
 }
 
 .badge {
-  background-color: rgb(124, 64, 255);
+    background-color: rgb(124, 64, 255);
 }
 
 .accordion-button {
-  color: rgb(171, 132, 255) !important;
+    color: rgb(171, 132, 255) !important;
 }
 
 .navbar-toggler,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 .card {
-  z-index: 1;
-  border: none !important;
-  transition: 0.5s;
+    z-index: 1;
+    border: none !important;
+    transition: 0.5s;
 }
 
 .accordion-item {
-  border: none !important;
+    border: none !important;
 }
 
 .card:hover,
 .card img:hover,
 .card .badge:hover,
 .accordion-item:hover {
-  transition: 0.5s;
-  scale: 1.01;
+    transition: 0.5s;
+    scale: 1.01;
 }
 
 .card-img-top {
-  transition: 0.4s;
-  align-self: center;
+    transition: 0.4s;
+    align-self: center;
 }
 
+.navbar-expand-lg {
+    z-index: 99;
+    padding: 0;
+    .container {
+        .navbar-toggler {
+            display: block;
+        }
+    }
+}
+
+.navbar-collapse {
+    display: flex;
+    transition: all 1.5s;
+}
+
+.navbar-collapse li {
+    opacity: 0;
+    transition: 0.4s cubic-bezier(0.58, 0.3, 0.005, 1); 
+    opacity: 1;
+}
+
+.show{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 100vh;
+  width: 100%;
+}
+
+.show ul li {
+  font-size: 2rem;
+  padding: 1rem 0;
+    opacity: 1;
+    &:nth-child(1) {
+        transition-delay: 1s;
+    }
+    &:nth-child(2) {
+        transition-delay: 0.75s;
+    }
+    &:nth-child(3) {
+        transition-delay: 0.5s;
+    }
+    &:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+}
+
+.navbar-collapse li a {
+    color: white;
+}
+
+.dropdown-item {
+  transition: 1.5s;
+}
