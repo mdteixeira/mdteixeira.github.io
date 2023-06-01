@@ -4,12 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/style.css" />
 
         <!-- Bootstrap -->
         <link
@@ -19,19 +22,14 @@
             crossorigin="anonymous"
         />
         <title>md.teixeira</title>
-    
-</head>
+    </head>
 
     <body id="inicio">
         <script>
-            // Get the button:
             let mybutton = document.getElementById('toTop');
-
-            // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
                 scrollFunction();
             };
-
             function scrollFunction() {
                 if (
                     document.body.scrollTop > 150 ||
@@ -84,7 +82,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse text-center navbar-collapse"
+                        class="collapse navbar-collapse"
                         id="navbarNavDropdown"
                     >
                         <ul class="navbar-nav mx-auto">
@@ -106,7 +104,9 @@
                                 >
                                     Conhecimentos
                                 </a>
-                                <ul class="dropdown-menu bg-black border-2 text-center">
+                                <ul
+                                    class="dropdown-menu bg-black border-2 text-center"
+                                >
                                     <li>
                                         <a class="dropdown-item" href="#cursos"
                                             >Cursos</a
@@ -356,7 +356,7 @@
                     </div>
                 </article>
 
-                <article id="tecnologias">
+                <article id="tecnologias" class="mb-5">
                     <br />
                     <h2 class="mt-2 text-center px-3 py-3">
                         Algumas tecnologias que sei usar
@@ -451,7 +451,7 @@
                     </div>
                 </article>
 
-                <article id="saibaMais">
+                <article id="saibaMais" class="bg-dark-subtle mt-5 p-3 shadow">
                     <br />
                     <h2 class="mt-2 text-center px-lg-3 text-white"></h2>
                     <div class="m-lg-5 m-5 z-0" data-bs-theme="dark">
@@ -483,7 +483,9 @@
                                         Acesse meu currículo e veja o que estou
                                         fazendo!
                                     </p>
-                                    <div class="d-flex justify-content-lg-start justify-content-center mt-5">
+                                    <div
+                                        class="d-flex justify-content-lg-start justify-content-center mt-5"
+                                    >
                                         <a
                                             class="btn btn-outline-light fs-5"
                                             href="https://linkedin.com/in/mdteixeira15"
@@ -562,7 +564,15 @@
                         </section>
                         <section id="copy" class="pt-5 text-white">
                             © Feito por Matheus Diego Teixeira - 2023
-                        <br><small>Código disponível no <a href="http://github.com/mdteixeira/mdteixeira.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+                            <br /><small
+                                >Código disponível no
+                                <a
+                                    href="http://github.com/mdteixeira/mdteixeira.github.io"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >GitHub</a
+                                ></small
+                            >
                         </section>
                     </article>
                 </footer>
