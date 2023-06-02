@@ -252,3 +252,56 @@ button.active {
 strong {
     color: whitesmoke;
 }
+
+.cardContainer {
+    height: calc(5.5vh*10);
+    overflow-x: auto !important;
+    white-space:nowrap;
+}
+
+.cardContainer a {
+    height: 0;
+    display: inline-block;
+    color: white;
+    margin: 14px;
+    text-decoration: none;
+}
+
+.card {
+    margin: 1rem;
+    white-space:normal;
+}
+
+.required::after {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0.2rem;
+    color: rgb(124, 64, 255);
+    content: '*';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+span {
+    color: rgb(171, 132, 255);
+}
+
+button:hover {
+    color: #ddd !important;
+    cursor:not-allowed !important;
+}
+.roxo {
+    color: rgb(171, 132, 255);
+
+}
+.btn-outline-info {
+    color: rgb(171, 132, 255) !important;
+    border: solid 1px rgb(171, 132, 255) !important;
+}
+.btn-outline-info:hover {
+    color: #303030 !important;
+    background-color: rgb(171, 132, 255) !important;
+}

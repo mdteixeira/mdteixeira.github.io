@@ -12,6 +12,17 @@
             rel="stylesheet"
         />
 
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
+                    'opsz' 40;
+            }
+        </style>
+
         <link rel="stylesheet" href="./css/style.css" />
 
         <!-- Bootstrap -->
@@ -94,7 +105,7 @@
                                     >Início</a
                                 >
                             </li>
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a
                                     class="nav-link dropdown-toggle"
                                     href="#"
@@ -120,6 +131,14 @@
                                         >
                                     </li>
                                 </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#cursos" class="nav-link">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Projetos" class="nav-link"
+                                    >Projetos</a
+                                >
                             </li>
 
                             <!-- Logo do Site -->
@@ -132,6 +151,11 @@
                                     ;
                                 />
                             </a>
+                            <li class="nav-item">
+                                <a href="#tecnologias" class="nav-link"
+                                    >Tecnologias</a
+                                >
+                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#saibaMais"
@@ -245,7 +269,7 @@
                     <br /><br />
                     <h2 class="py-3 text-center">Alguns cursos que fiz</h2>
 
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 m-2 mb-5">
                         <div class="col">
                             <section id="card_1">
                                 <div class="card rounded-5 shadow">
@@ -257,7 +281,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">
                                             Introdução à Ciência da Computação
-                                            com Python - 1 e 2
+                                            com Python
                                         </h5>
                                         <p class="card-text">
                                             <span class="badge">Python</span>
@@ -356,13 +380,151 @@
                     </div>
                 </article>
 
+                <article id="Projetos" class="bg-dark-subtle">
+                    <br /><br />
+                    <h2 class="mt-2 text-center px-3 py-3">Meus projetos</h2>
+                    <p class="lead text-center">
+                        Alguns dos projetos que fiz/estou fazendo.
+                    </p>
+                    <div class="cardContainer">
+                        <a href="./CalculadoraIMC">
+                            <section id="card1">
+                                <div class="card rounded rounded-5 mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="./images/imc.png"
+                                                class="img-fluid rounded-5 p-3"
+                                                alt="..."
+                                            />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Calculadora de IMC
+                                                </h5>
+                                                <p class="card-text">
+                                                    Projeto para praticar
+                                                    JavaScript. Calcula o índice
+                                                    de massa corporal à partir
+                                                    da Massa e Altura.
+                                                </p>
+                                                <p>
+                                                    <span class="badge"
+                                                        >HTML</span
+                                                    >
+                                                    <span class="badge"
+                                                        >CSS</span
+                                                    >
+                                                    <span class="badge"
+                                                        >Bootstrap</span
+                                                    >
+                                                    <span class="badge"
+                                                        >JavaScript</span
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                        <a href="./site-TCC/NewOdonto/">
+                            <section id="card2">
+                                <div class="card rounded rounded-5 mb-3">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <img
+                                                src="./images/newOdonto.png"
+                                                class="img-fluid rounded-5 p-3"
+                                                alt="..."
+                                            />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    NEWODONTO
+                                                </h5>
+                                                <p class="card-text">
+                                                    Website de uma clínica
+                                                    Odontológica. Feita para o
+                                                    TCC do curso "Programação
+                                                    Web".
+                                                </p>
+                                                <p>
+                                                    <span class="badge"
+                                                        >HTML</span
+                                                    >
+                                                    <span class="badge"
+                                                        >CSS</span
+                                                    >
+                                                    <span class="badge"
+                                                        >Bootstrap</span
+                                                    >
+                                                    <span class="badge"
+                                                        >JavaScript</span
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                        <a href="./site-TCC/TapHouse/">
+                            <section id="card3">
+                                <div class="card rounded rounded-5 mb-3">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <img
+                                                src="./images/TapHouse.png"
+                                                class="img-fluid rounded-5 p-3"
+                                                alt="..."
+                                            />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Santa Inês Tap House
+                                                </h5>
+                                                <p class="card-text">
+                                                    Website de uma hamburgueria.
+                                                    Feita para o TCC do curso
+                                                    "Programação Web"
+                                                </p>
+                                                <p>
+                                                    <span class="badge"
+                                                        >HTML</span
+                                                    >
+                                                    <span class="badge"
+                                                        >CSS</span
+                                                    >
+                                                    <span class="badge"
+                                                        >Bootstrap</span
+                                                    >
+                                                    <span class="badge"
+                                                        >JavaScript</span
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                </article>
+
                 <article id="tecnologias" class="mb-5">
-                    <br />
+                    <br /><br />
                     <h2 class="mt-2 text-center px-3 py-3">
                         Algumas tecnologias que sei usar
                     </h2>
 
-                    <div class="accordion m-4 shadow" id="acord-conhecimentos">
+                    <div
+                        class="accordion accordion-flush mt-4 shadow"
+                        id="acord-conhecimentos"
+                    >
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button
@@ -450,8 +612,12 @@
                         </div>
                     </div>
                 </article>
+                <div class="mt-5" style="height: 5px"></div>
 
-                <article id="saibaMais" class="bg-dark-subtle mt-5 p-3 shadow">
+                <article
+                    id="saibaMais"
+                    class="bg-light-subtle m-lg-5 m-3 rounded-5 shadow-lg mt-5 p-2 shadow"
+                >
                     <br />
                     <h2 class="mt-2 text-center px-lg-3 text-white"></h2>
                     <div class="m-lg-5 m-5 z-0" data-bs-theme="dark">
@@ -508,13 +674,90 @@
                     </div>
                 </article>
 
+                <article class="mt-5 bg-dark m-lg-5 rounded-5" id="contato">
+                    <br /><br />
+                    <h2 class="mt-2 text-center px-3 py-3 mb-3">
+                        Entre em contato comigo!
+                    </h2>
+                    <form class="px-5 needs-validation">
+                        <div class="d-lg-flex gap-lg-3">
+                            <div class="form-floating mb-3 col">
+                                <input
+                                    type="text"
+                                    class="form-control col"
+                                    id="nome"
+                                    placeholder="Password"
+                                    required
+                                />
+                                <label class="required" for="nome">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3 col">
+                                <input
+                                    type="text"
+                                    class="form-control col"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required
+                                />
+                                <label class="required" for="sobrenome"
+                                    >Sobrenome</label
+                                >
+                            </div>
+                        </div>
+                        <div class="d-lg-flex gap-lg-3">
+                            <div class="form-floating mb-3 col-lg-8">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    autocomplete="email"
+                                    placeholder="nome@exemplo.com.br"
+                                    required
+                                />
+                                <label class="required" for="email"
+                                    >Email</label
+                                >
+                            </div>
+                            <div class="form-floating mb-3 col">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="celular"
+                                    placeholder="(xx)xxxxx-xxxx"
+                                    required
+                                />
+                                <label class="required" for="celular"
+                                    >Celular</label
+                                >
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea
+                                class="form-control"
+                                placeholder="Deixe um comentário aqui"
+                                id="floatingTextarea2"
+                                style="height: 100px"
+                            ></textarea>
+                            <label for="floatingTextarea2">Comentários</label>
+                        </div>
+                        <div class="d-grid p-3">
+                            <button
+                                type="submit"
+                                class="disabled btn bg-body-secondary border border-2 text-white btn-lg mb-3 d-flex align-items-center justify-content-center"
+                            >
+                                Enviar
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </article>
+
                 <footer>
                     <article class="p-3 mt-5" id="contato">
                         <br />
                         <hr style="border-color: white; padding: 10px" />
-                        <h2 class="mt-2 text-center px-3 mb-4 text-white">
-                            Entre em contato comigo!
-                        </h2>
                         <section id="redes" class="text-center">
                             <a
                                 id="linkedin"
@@ -570,9 +813,10 @@
                                     href="http://github.com/mdteixeira/mdteixeira.github.io"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    class="link-secondary"
                                     >GitHub</a
-                                ></small
-                            >
+                                >
+                            </small>
                         </section>
                     </article>
                 </footer>
