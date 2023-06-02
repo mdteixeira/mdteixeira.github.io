@@ -291,7 +291,6 @@ span {
 
 button:hover {
     color: #ddd !important;
-    cursor:not-allowed !important;
 }
 .roxo {
     color: rgb(171, 132, 255);

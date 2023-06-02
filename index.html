@@ -687,9 +687,9 @@
                                     class="form-control col"
                                     id="nome"
                                     placeholder="Password"
-                                    required
+                                    
                                 />
-                                <label class="required" for="nome">Nome</label>
+                                <label class="" for="nome">Nome</label>
                             </div>
                             <div class="form-floating mb-3 col">
                                 <input
@@ -697,37 +697,10 @@
                                     class="form-control col"
                                     id="sobrenome"
                                     placeholder="Sobrenome"
-                                    required
+                                    
                                 />
-                                <label class="required" for="sobrenome"
+                                <label class="bg-none" for="sobrenome"
                                     >Sobrenome</label
-                                >
-                            </div>
-                        </div>
-                        <div class="d-lg-flex gap-lg-3">
-                            <div class="form-floating mb-3 col-lg-8">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="email"
-                                    autocomplete="email"
-                                    placeholder="nome@exemplo.com.br"
-                                    required
-                                />
-                                <label class="required" for="email"
-                                    >Email</label
-                                >
-                            </div>
-                            <div class="form-floating mb-3 col">
-                                <input
-                                    type="number"
-                                    class="form-control"
-                                    id="celular"
-                                    placeholder="(xx)xxxxx-xxxx"
-                                    required
-                                />
-                                <label class="required" for="celular"
-                                    >Celular</label
                                 >
                             </div>
                         </div>
@@ -735,15 +708,16 @@
                             <textarea
                                 class="form-control"
                                 placeholder="Deixe um comentário aqui"
-                                id="floatingTextarea2"
+                                id="comentario"
                                 style="height: 100px"
                             ></textarea>
-                            <label for="floatingTextarea2">Comentários</label>
+                            <label class="bg-none" for="comentario">Mensagem</label>
                         </div>
                         <div class="d-grid p-3">
                             <button
-                                type="submit"
-                                class="disabled btn bg-body-secondary border border-2 text-white btn-lg mb-3 d-flex align-items-center justify-content-center"
+                                type="button"
+                                onclick="whatsapp();"
+                                class="btn bg-body-secondary border border-2 text-white btn-lg mb-3 d-flex align-items-center justify-content-center"
                             >
                                 Enviar
                                 <span class="material-symbols-outlined">
@@ -822,5 +796,6 @@
                 </footer>
             </main>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
