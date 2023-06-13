@@ -258,9 +258,9 @@ strong {
 }
 
 .cardContainer {
-    height: calc(5.5vh * 10);
-    overflow-x: auto !important;
+    overflow-x: scroll !important;
     white-space: nowrap;
+    height: 400px;
 }
 
 .cardContainer a {
