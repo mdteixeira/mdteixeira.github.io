@@ -188,7 +188,6 @@ button.active {
     filter: brightness(250%);
 }
 
-.accordion-item:hover,
 .card:hover,
 .card img:hover {
     scale: 1.02;
@@ -311,6 +310,7 @@ button:hover {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 7px;
   }
   
   /* Track */
@@ -328,4 +328,32 @@ button:hover {
     background: #555;
   }
 
-  
+  .img-thumbnail {
+    border: solid 2px rgb(124, 64, 255) !important ;
+  }
+
+  input:focus, textarea:focus {
+    box-shadow: none !important;
+    border: 1px solid rgb(124, 64, 255) !important;
+  }
+
+  #enviar {
+    border: none !important;
+  }
+
+  #enviar:hover {
+    background-color: #303030 !important;
+  }
+
+  #enviar:hover span {
+    transition: 0.3s;
+    margin-left: 0.5rem;
+  }
+
+  #enviar:active {
+    background-color: #202020 !important;
+  }
+  #enviar:active span {
+    transition: 0.3s;
+    margin-left: 1.5rem;
+  }
