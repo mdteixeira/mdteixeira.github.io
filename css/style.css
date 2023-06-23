@@ -84,16 +84,6 @@ body {
     width: auto;
 }
 
-.carousel,
-.carousel-inner,
-.carousel-item {
-    height: 100.1vh;
-}
-
-.carousel-caption {
-    top: 55%;
-}
-
 button.active {
     background-color: rgb(156, 110, 255) !important;
 }
@@ -174,10 +164,6 @@ button.active {
     margin: 0;
 }
 
-.accordion-item {
-    border: none !important;
-}
-
 .card .badge:hover {
     transition: 0.5s;
     scale: 1.05;
@@ -256,18 +242,24 @@ strong {
     color: whitesmoke;
 }
 
-.cardContainer {
-    overflow-x: scroll !important;
-    white-space: nowrap;
-    height: 400px;
+.card-projeto {
+    display: block;
+    margin: auto;
+    width: 75% !important;
+}
+.card-projeto h5{
+    font-size: 2rem;
+}
+.card-projeto span{
+    margin-top: 1.5rem;
 }
 
-.cardContainer a {
-    height: 0;
-    display: inline-block;
-    color: white;
-    margin: 14px;
-    text-decoration: none;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(0) !important;
+}
+
+.carousel-item a{
+    text-decoration: none !important;
 }
 
 .card {
