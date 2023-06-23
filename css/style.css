@@ -250,9 +250,6 @@ strong {
 .card-projeto h5{
     font-size: 2rem;
 }
-.card-projeto span{
-    margin-top: 1.5rem;
-}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(0) !important;
