@@ -188,6 +188,19 @@ button.active {
     transition: none !important;
 }
 
+/* .carousel-inner,
+.carousel-item {
+    height: 100vh;
+} */
+
+#carrosselPrincipal .carousel-inner .carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    top: 55%;
+}
+
 .navbar-collapse.show {
     transition: 1.5s cubic-bezier(0.58, 0.3, 0.005, 1) !important;
     position: absolute;
@@ -247,15 +260,16 @@ strong {
     margin: auto;
     width: 85% !important;
 }
-.card-projeto h5{
+.card-projeto h5 {
     font-size: 2rem;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     filter: invert(0) !important;
 }
 
-.carousel-item a{
+.carousel-item a {
     text-decoration: none !important;
 }
 
@@ -300,49 +314,50 @@ button:hover {
 ::-webkit-scrollbar {
     width: 10px;
     height: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #101010;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(124, 64, 255);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
-  .img-thumbnail {
+.img-thumbnail {
     border: solid 2px rgb(124, 64, 255) !important ;
-  }
+}
 
-  input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     box-shadow: none !important;
     border: 1px solid rgb(124, 64, 255) !important;
-  }
+}
 
-  #enviar {
+#enviar {
     border: none !important;
-  }
+}
 
-  #enviar:hover {
+#enviar:hover {
     background-color: #303030 !important;
-  }
+}
 
-  #enviar:hover span {
+#enviar:hover span {
     transition: 0.3s;
     margin-left: 0.5rem;
-  }
+}
 
-  #enviar:active {
+#enviar:active {
     background-color: #202020 !important;
-  }
-  #enviar:active span {
+}
+#enviar:active span {
     transition: 0.3s;
     margin-left: 1.5rem;
-  }
+}
