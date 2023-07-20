@@ -5,7 +5,7 @@ function whatsapp() {
     var newnome = ''
 
     if (nome.length > 0) {
-        newnome = ' Me chamo ' + nome;
+        newnome = '. Me chamo ' + nome;
     }
     if (sobrenome.length > 0) {
         newnome += ' ' + sobrenome;
