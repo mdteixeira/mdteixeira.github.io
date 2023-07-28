@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <link rel="stylesheet" href="./public/output.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>md.teixeira</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -22,939 +22,386 @@
                     'opsz' 40;
             }
         </style>
-
-        <link rel="stylesheet" href="./css/style.css" />
-
-        <!-- Bootstrap -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous"
-        />
-        <title>md.teixeira</title>
     </head>
-
-    <body id="inicio">
-        <!-- Bootstrap script -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"
-        ></script>
-
-        <header>
-            <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <!-- Logo do site -->
-                    <a class="navbar-brand d-lg-none" href="#inicio">
+    <body class="font-Poppins bg-transparent text-slate-300">
+        <content>
+            <header id="section-1" class="header flex flex-col h-screen">
+                <section class="flex mt-10 justify-evenly">
+                    <a class="link" href="https://github.com/mdteixeira">
                         <img
-                            id="logo__"
-                            src="./images/logo/logo-long.png"
-                            alt="logo"
-                            class="d-lg-none"
+                            src="./assets/images/social/github.png"
+                            class="h-[40px] invert"
+                            alt=""
+                        />GitHub</a
+                    >
+                    <a
+                        class="link"
+                        href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit"
+                    >
+                        <img
+                            src="./assets/images/social/cv.png"
+                            class="h-[40px] invert"
+                            alt=""
+                        />Currículo</a
+                    >
+                    <a
+                        class="link"
+                        href="https://www.linkedin.com/in/mdteixeira15/"
+                    >
+                        <img
+                            src="./assets/images/social/linkedin.png"
+                            class="h-[40px] invert"
+                            alt=""
+                        />LinkedIn</a
+                    >
+                </section>
+                <section
+                    class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full text-slate-300"
+                >
+                    <section
+                        class="left h-full text-center mx-3 flex flex-col justify-center"
+                    >
+                        <h1
+                            id="mainTitle"
+                            class="text-gd font-bold lg:text-8xl text-6xl"
+                        >
+                            Matheus Teixeira
+                        </h1>
+                        <hr />
+
+                        <h1 id="c-1" class="text-gd font-bold text-4xl">
+                            Front-End Developer
+                        </h1>
+                    </section>
+                    <figure class="right">
+                        <img
+                            class="w-[50vw] md:w-[30vw] mt-5 p-2 border-purple-600 border-4 rounded-3xl"
+                            src="/assets/images/mdteixeira.png"
+                            alt="foto do Matheus Teixeira"
                         />
-                    </a>
-                    <button
-                        class="navbar-toggler collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+                    </figure>
+                </section>
+            </header>
+            <main>
+                <article data-aos="fade-down" class="md:my-32 my-5">
+                    <h1
+                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-lg-center"
-                        id="navbarNavDropdown"
-                    >
-                        <ul class="navbar-nav mx-5">
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a
-                                    class="nav-link"
-                                    aria-current="page"
-                                    href="#inicio"
-                                    >Início</a
-                                >
+                        Sobre mim
+                    </h1>
+                    <hr class="w-[25%]" />
+                    <section>
+                        <ul class="text-2xl mx-12 mt-10 lg:ml-32">
+                            <li>
+                                <span class="text-4xl">🙋🏻‍♂️</span> Tenho
+                                <strong>18 anos</strong>
                             </li>
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a href="#cursos" class="nav-link">Cursos</a>
+                            <li>
+                                <span class="text-4xl"> 👨‍💻 </span>
+                                Estou no segundo semestre de
+                                <strong>Ciência da Computação</strong>
                             </li>
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a href="#Projetos" class="nav-link"
-                                    >Projetos</a
-                                >
+                            <li>
+                                <span class="text-4xl"> 🧑‍🎓 </span> Sou formado
+                                em <strong>Automação Industrial</strong> pelo
+                                Liceu de Artes e Ofícios de São Paulo
                             </li>
-
-                            <!-- Logo do Site -->
-                            <a href="#inicio">
-                                <img
-                                    src="./images/logo/logo-long.png"
-                                    class="d-none d-lg-block mx-3"
-                                    id="logo_"
-                                    style="text-align: center"
-                                    ;
-                                />
-                            </a>
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a href="#tecnologias" class="nav-link"
-                                    >Tecnologias</a
-                                >
+                            <li>
+                                <span class="text-4xl"> 💜 </span>
+                                Sou apaixonado por
+                                <strong>tecnologia</strong> e
+                                <strong>música</strong>
                             </li>
-
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a class="nav-link" href="#saibaMais"
-                                    >Saiba Mais</a
-                                >
-                            </li>
-                            <li
-                                class="nav-item text-center"
-                                style="width: 12vw"
-                            >
-                                <a class="nav-link" href="#contato">Contato</a>
+                            <li>
+                                <span class="text-4xl"> 📍</span> Moro na Zona
+                                Norte de São Paulo
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div
-            id="carrosselPrincipal"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-theme="light"
-        >
-            <div class="carousel-indicators d-lg-flex bg-transparent">
-                <button
-                    type="button"
-                    data-bs-target="#carrosselPrincipal"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carrosselPrincipal"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carrosselPrincipal"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                ></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="texto">
-                    <h5>Olá! Me chamo</h5>
-                    <h1 class="display-1 fw-bold mx-2">Matheus Teixeira</h1>
-                </div>
-
-                <div class="carousel-item bg-html active">
-                    <div class="carousel-caption text-white fs-4">
-                        <h4 class="text-white fw-bolder fs-3">Estudante de Ciência da Computação</h4>
-                        <p class="fw-light">
-                            Cursando o <strong>Segundo</strong> de 8 semestres
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item bg-html">
-                    <div class="carousel-caption text-white fs-4">
-                        <h4 class="text-white fw-bolder fs-3">Formado em Automação Industrial</h4>
-                        <p class="fw-light">
-                            Pelo Liceu de Artes e Ofícios como
-                            <strong>Bolsista Integral</strong>
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item bg-html">
-                    <div class="carousel-caption text-white fs-4">
-                        <h4 class="text-white fw-bolder fs-3">Procurando oportunidades</h4>
-                        <p class="fw-light">
-                            Como <strong>Estagiário</strong> ou
-                            <strong>Dev Júnior</strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button
-            class="carousel-control-prev z-3 d-none d-lg-flex"
-            type="button"
-            data-bs-target="#carrosselPrincipal"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next z-3 d-none d-lg-flex"
-            type="button"
-            data-bs-target="#carrosselPrincipal"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
-        <!-- scroll to Top -->
-        <div class="content" data-bs-theme="dark">
-            <a
-                class="btn btn-outline-secondary rounded-4 border-2 visually-hidden"
-                id="toTop"
-                href="#inicio"
-                role="button"
-                ><img
-                    id="img1"
-                    src="./images/to-top.png"
-                    alt="Imagem Scroll Up"
-            /></a>
-
-            <main class="text-white">
-                <article id="cursos">
-                    <br /><br />
-                    <h2 class="py-3 text-center">Alguns cursos que fiz</h2>
-
-                    <div class="row row-cols-1 row-cols-md-3 g-4 m-2 mb-5">
-                        <div class="col">
-                            <section id="card_1">
-                                <div class="card rounded-5 shadow">
-                                    <img
-                                        src="./images/cursos/curso_ip.png"
-                                        class="card-img-top p-3 rounded-5"
-                                        alt="Logo Python"
-                                    />
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            Introdução à Ciência da Computação
-                                            com Python
-                                        </h5>
-                                        <p class="card-text">
-                                            <span class="badge">Python</span>
-                                            <span class="badge"
-                                                >Algoritmos</span
-                                            >
-                                            <span class="badge"
-                                                >Lógica de programação</span
-                                            >
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="btn">
-                                            <a
-                                                href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos-2"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                >Link para o curso</a
-                                            >
-                                        </small>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col">
-                            <section id="card_2">
-                                <div class="card rounded-5 shadow">
-                                    <img
-                                        src="./images/cursos/curso_bp.png"
-                                        class="card-img-top p-3 rounded-5"
-                                        alt="Banco Pan"
-                                    />
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            Bootcamp online - Banco PAN Java
-                                            Developer
-                                        </h5>
-                                        <p class="card-text">
-                                            <span class="badge">Java</span>
-                                            <span class="badge">MySQL</span>
-                                            <span class="badge"
-                                                >Equipes ágeis</span
-                                            >
-                                            <span class="badge">API REST</span>
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="btn"
-                                            ><a
-                                                href="https://web.dio.me/track/banco-pan-java-developer"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                >Link para o curso</a
-                                            ></small
-                                        >
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col">
-                            <section id="card_3">
-                                <div class="card rounded-5 shadow">
-                                    <img
-                                        src="./images/cursos/curso_ios.png"
-                                        class="card-img-top p-3 rounded-5"
-                                        alt="Curso IOS"
-                                    />
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            Curso presencial - <br />
-                                            Programação Web
-                                        </h5>
-                                        <p class="card-text">
-                                            <span class="badge">HTML</span>
-                                            <span class="badge">CSS</span>
-                                            <span class="badge"
-                                                >JavaScript</span
-                                            >
-                                            <span class="badge">React</span>
-                                            <span class="badge">GitHub</span>
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="btn"
-                                            ><a
-                                                href="https://ios.org.br/cursos-ios#programacaoweb"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                >Link para o curso</a
-                                            ></small
-                                        >
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </article>
-
-                <article id="Projetos" class="pb-4">
-                    <br /><br />
-                    <h2 class="mt-2 text-center px-3 py-3">Meus projetos</h2>
-                    <p class="lead text-center">
-                        Alguns dos projetos que fiz/estou fazendo.
-                    </p>
-
-                    <section>
-                        <div
-                            id="carousel-projetos"
-                            data-bs-interval="5000"
-                            class="carousel slide"
-                            data-bs-ride="carousel"
-                            data-bs-pause="hover"
-                        >
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a
-                                        class="card-projeto"
-                                        href="./CalculadoraIMC"
-                                    >
-                                        <section id="card1">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-auto">
-                                                        <img
-                                                            src="./images/imc.png"
-                                                            class="img-fluid"
-                                                            alt="..."
-                                                            style="
-                                                                max-width: 450px;
-                                                                width: 75vw;
-                                                            "
-                                                        />
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-body">
-                                                            <h5
-                                                                class="card-title"
-                                                            >
-                                                                Calculadora de
-                                                                IMC
-                                                            </h5>
-                                                            <p
-                                                                class="card-text"
-                                                            >
-                                                                Calcula o índice
-                                                                de massa
-                                                                corporal à
-                                                                partir da Massa
-                                                                e Altura.
-                                                            </p>
-                                                            <p>
-                                                                <span
-                                                                    class="badge"
-                                                                    >HTML</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >CSS</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >Bootstrap</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >JavaScript</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a
-                                        class="card-projeto"
-                                        href="./Site-TCC/NewOdonto/"
-                                    >
-                                        <section id="card2">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-auto">
-                                                        <img
-                                                            src="./images/newOdonto.png"
-                                                            class="img-fluid"
-                                                            alt="..."
-                                                            style="
-                                                                max-width: 450px;
-                                                                width: 75vw;
-                                                            "
-                                                        />
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-body">
-                                                            <h5
-                                                                class="card-title"
-                                                            >
-                                                                NEWODONTO
-                                                            </h5>
-                                                            <p
-                                                                class="card-text"
-                                                            >
-                                                                Website de uma
-                                                                clínica
-                                                                Odontológica.
-                                                                Feito para o TCC
-                                                                do IOS
-                                                            </p>
-                                                            <p>
-                                                                <span
-                                                                    class="badge"
-                                                                    >HTML</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >CSS</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >Bootstrap</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >JavaScript</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a
-                                        class="card-projeto"
-                                        href="./Site-TCC/TapHouse/"
-                                    >
-                                        <section id="card3">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-auto">
-                                                        <img
-                                                            src="./images/TapHouse.png"
-                                                            class="img-fluid"
-                                                            alt="..."
-                                                            style="
-                                                                max-width: 450px;
-                                                                width: 75vw;
-                                                            "
-                                                        />
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-body">
-                                                            <h5
-                                                                class="card-title"
-                                                            >
-                                                                Santa Inês Tap
-                                                                House
-                                                            </h5>
-                                                            <p
-                                                                class="card-text"
-                                                            >
-                                                                Website de uma
-                                                                hamburgueria.
-                                                                Feita para o TCC
-                                                                do IOS.
-                                                            </p>
-                                                            <p>
-                                                                <span
-                                                                    class="badge"
-                                                                    >HTML</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >CSS</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >Bootstrap</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >JavaScript</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a class="card-projeto" href="./to-do/">
-                                        <section id="card3">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-auto">
-                                                        <img
-                                                            src="./images/to-do.png"
-                                                            class="img-fluid"
-                                                            alt="..."
-                                                            style="
-                                                                max-width: 450px;
-                                                                width: 75vw;
-                                                            "
-                                                        />
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-body">
-                                                            <h5
-                                                                class="card-title"
-                                                            >
-                                                                Agenda de
-                                                                Tarefas
-                                                            </h5>
-                                                            <p
-                                                                class="card-text"
-                                                            >
-                                                                Lista de To-Do
-                                                                simples para
-                                                                praticar React
-                                                            </p>
-                                                            <p>
-                                                                <span
-                                                                    class="badge"
-                                                                    >HTML</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >CSS</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >JavaScript</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >React</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a class="card-projeto" href="./YouTravel/">
-                                        <section id="card3">
-                                            <div class="card mb-3">
-                                                <div class="row g-0">
-                                                    <div class="col-auto">
-                                                        <img
-                                                            src="./images/YouTravel.png"
-                                                            class="img-fluid"
-                                                            alt="..."
-                                                            style="
-                                                                max-width: 450px;
-                                                                width: 75vw;
-                                                            "
-                                                        />
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-body">
-                                                            <h5
-                                                                class="card-title"
-                                                            >
-                                                                YouTravel
-                                                            </h5>
-                                                            <p
-                                                                class="card-text"
-                                                            >
-                                                                Landing-page
-                                                                simples
-                                                                utilizando
-                                                                React.
-                                                            </p>
-                                                            <p>
-                                                                <span
-                                                                    class="badge"
-                                                                    >HTML</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >CSS</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >JavaScript</span
-                                                                >
-                                                                <span
-                                                                    class="badge"
-                                                                    >React</span
-                                                                >
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </a>
-                                </div>
-                            </div>
-                            <button
-                                class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carousel-projetos"
-                                data-bs-slide="prev"
-                            >
-                                <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                ></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button
-                                class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carousel-projetos"
-                                data-bs-slide="next"
-                            >
-                                <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                ></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
                     </section>
                 </article>
 
-                <article id="tecnologias" class="mb-5">
-                    <br /><br />
-                    <h2 class="mt-2 text-center px-3 py-3">
-                        Algumas tecnologias que sei usar
-                    </h2>
-                    <p class="lead text-center">
-                        Alguns das tecnologias que aprendi em cursos.
-                    </p>
-
-                    <div
-                        class="accordion accordion-flush mt-4 shadow"
-                        id="acord-conhecimentos"
-                    >
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button
-                                    class="accordion-button fs-4 fw-bold collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne"
-                                >
-                                    Java
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseOne"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#acord-conhecimentos"
-                            >
-                                <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            SpringBoot
-                                        </li>
-                                        <li class="list-group-item">Maven</li>
-                                        <li class="list-group-item">JUnit</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button
-                                    class="accordion-button fs-4 fw-bold collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo"
-                                    aria-expanded="true"
-                                    aria-controls="collapseTwo"
-                                >
-                                    SQL
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseTwo"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#acord-conhecimentos"
-                            >
-                                <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">MySQL</li>
-                                        <li class="list-group-item">MongoDB</li>
-                                        <li class="list-group-item">NoSQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button
-                                    class="accordion-button fs-4 fw-bold collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree"
-                                    aria-expanded="true"
-                                    aria-controls="collapseThree"
-                                >
-                                    Front-End
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseThree"
-                                class="accordion-collapse collapse"
-                                data-bs-parent="#acord-conhecimentos"
-                            >
-                                <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">React</li>
-                                        <li class="list-group-item">
-                                            Bootstrap
-                                        </li>
-                                        <li class="list-group-item">SASS</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <div class="mt-5" style="height: 5px"></div>
-
                 <article
-                    id="saibaMais"
-                    class="bg-light-subtle m-lg-5 m-3 rounded-5 shadow-lg mt-5 p-2 shadow"
+                    data-aos="fade-up"
+                    class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full my-48"
                 >
-                    <br />
-                    <h2 class="mt-2 text-center px-lg-3 text-white"></h2>
-                    <div class="m-lg-5 m-5 z-0" data-bs-theme="dark">
-                        <div class="card-body">
-                            <h5 class="card-title display-5 mb-5">
-                                Mais um pouco sobre mim
-                            </h5>
-                            <p class="card-text fs-5">
-                                🙋🏻‍♂️ Tenho 18 anos, estou estudando
-                                <strong>Ciência da Computação</strong> e sou
-                                apaixonado por <strong>tecnologia</strong> e
-                                <strong>música</strong>
-                            </p>
-                            <p class="card-text my-5 fs-5">
-                                📍 Moro na Zona Norte de
-                                <strong>São Paulo</strong>
-                            </p>
-                            <p class="card-text my-3 fs-4 fw-bold">
-                                Acesse meu currículo e veja o que estou fazendo!
-                            </p>
-                            <div
-                                class="d-flex justify-content-lg-start justify-content-center mt-5"
+                    <section class="left flex flex-col justify-around">
+                        <div>
+                            <h1
+                                class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
                             >
-                                <a
-                                    class="btn btn-outline-light fs-5"
-                                    href="https://linkedin.com/in/mdteixeira15"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Meu LinkedIn</a
-                                >
-                                <span class="m-2"></span>
-                                <a
-                                    class="btn btn-outline-info fs-5"
-                                    href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit?usp=sharing&ouid=108898827511156966062&rtpof=true&sd=true"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >Meu currículo</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                                Tecnologias
+                            </h1>
+                            <hr />
 
-                <article class="mt-5 bg-dark m-lg-5 m-3 rounded-5" id="contato">
-                    <br /><br />
-                    <h2 class="mt-2 text-center px-3 py-3 mb-3">
-                        Entre em contato comigo!
-                    </h2>
-                    <form class="px-5 needs-validation">
-                        <div class="d-lg-flex gap-lg-3">
-                            <div class="form-floating mb-3 col">
-                                <input
-                                    type="text"
-                                    class="form-control col"
-                                    id="nome"
-                                    placeholder="Password"
-                                />
-                                <label class="" for="nome">Nome</label>
-                            </div>
-                            <div class="form-floating mb-3 col">
-                                <input
-                                    type="text"
-                                    class="form-control col"
-                                    id="sobrenome"
-                                    placeholder="Sobrenome"
-                                />
-                                <label class="bg-none" for="sobrenome"
-                                    >Sobrenome</label
-                                >
-                            </div>
+                            <h1 class="text-2xl mx-12 mt-10 lg:ml-32">
+                                Estas são algumas das tecnologias que aprendi a
+                                utilizar até hoje.
+                            </h1>
                         </div>
-                        <div class="form-floating mb-3">
-                            <textarea
-                                class="form-control"
-                                placeholder="Deixe um comentário aqui"
-                                id="comentario"
-                                style="height: 100px"
-                            ></textarea>
-                            <label class="bg-none" for="comentario"
-                                >Mensagem</label
-                            >
+                        <ul
+                            class="grid-cols-3 text-center text-xl text-gd font-bold hidden lg:grid mx-auto"
+                        >
+                            <li>Bootstrap</li>
+                            <li>Django</li>
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>React</li>
+                            <li>TailwindCSS</li>
+                            <li>CSS</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </section>
+                    <figure class="right">
+                        <img
+                            src="./assets/images/tecnologias2.png"
+                            alt="logo de algumas tecnologias"
+                            class="p-10 md:p-0"
+                        />
+                    </figure>
+                </article>
+                <article data-aos="fade-up" class="mt-32">
+                    <h1
+                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
+                    >
+                        Projetos
+                    </h1>
+                    <hr class="w-[25%]" />
+                    <div
+                        class="container grid mx-auto md:grid-cols-3 md:gap-y-9 justify-items-center mt-16"
+                    >
+                        <div class="card" data-aos="fade-right">
+                            <h2 class="card-title">NewOdonto</h2>
+                            <img
+                                src="./assets/images/newOdonto.png"
+                                alt="visão de uma página da web"
+                            />
+                            <div class="techs my-5 flex justify-evenly">
+                                <img
+                                    src="./assets/images/html.png"
+                                    alt="html logo"
+                                />
+                                <img
+                                    src="./assets/images/css.png"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/bootstrap.png"
+                                    alt="bootstrap logo"
+                                />
+                            </div>
+                            <a href="" class="btn text-gd">Conferir</a>
                         </div>
-                        <div class="d-grid p-3">
-                            <button
-                                type="button"
-                                id="enviar"
-                                onclick="whatsapp();"
-                                class="btn bg-body-secondary border border-2 text-white btn-lg mb-3 d-flex align-items-center justify-content-center"
-                            >
-                                Enviar
-                                <span class="material-symbols-outlined">
-                                    chevron_right
-                                </span>
+                        <div class="card" data-aos="fade-right">
+                            <h2 class="card-title">Santa Inês</h2>
+                            <img
+                                src="./assets/images/TapHouse.png"
+                                alt="visão de uma página da web"
+                            />
+                            <div class="techs my-5 flex justify-evenly">
+                                <img
+                                    src="./assets/images/html.png"
+                                    alt="html logo"
+                                />
+                                <img
+                                    src="./assets/images/css.png"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/bootstrap.png"
+                                    alt="bootstrap logo"
+                                />
+                            </div>
+                            <a href="" class="btn text-gd">Conferir</a>
+                        </div>
+                        <div class="card" data-aos="fade-right">
+                            <h2 class="card-title">Calculadora IMC</h2>
+                            <img
+                                src="./assets/images/imc.png"
+                                alt="visão de uma página da web"
+                            />
+                            <div class="techs my-5 flex justify-evenly">
+                                <img
+                                    src="./assets/images/html.png"
+                                    alt="html logo"
+                                />
+                                <img
+                                    src="./assets/images/css.png"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/bootstrap.png"
+                                    alt="bootstrap logo"
+                                />
+                            </div>
+                            <a href="" class="btn text-gd">Conferir</a>
+                        </div>
+                        <div class="card" data-aos="fade-right">
+                            <h2 class="card-title">YouTravel</h2>
+                            <img
+                                src="./assets/images/YouTravel.png"
+                                alt="visão de uma página da web"
+                            />
+                            <div class="techs my-5 flex justify-evenly">
+                                <img
+                                    src="./assets/images/html.png"
+                                    alt="html logo"
+                                />
+                                <img
+                                    src="./assets/images/css.png"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/react.png"
+                                    alt="react logo"
+                                />
+                            </div>
+                            <a href="" class="btn text-gd">Conferir</a>
+                        </div>
+                        <div class="card" data-aos="fade-right">
+                            <h2 class="card-title">Agenda de Tarefas</h2>
+                            <img
+                                src="./assets/images/to-do.png"
+                                alt="visão de uma página da web"
+                            />
+                            <div class="techs my-5 flex justify-evenly">
+                                <img
+                                    src="./assets/images/html.png"
+                                    alt="html logo"
+                                />
+                                <img
+                                    src="./assets/images/css.png"
+                                    alt="css logo"
+                                />
+                                <img
+                                    src="./assets/images/react.png"
+                                    alt="react logo"
+                                />
+                            </div>
+                            <a href="" class="btn text-gd">Conferir</a>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <button class="btn" data-aos="fade-up">
+                                Acesse meu GitHub
                             </button>
                         </div>
+                    </div>
+                </article>
+                <article data-aos="fade-up" class="mt-32">
+                    <h1
+                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
+                    >
+                        Contato
+                    </h1>
+                    <hr class="w-[25%]" />
+                    <form
+                        class="flex flex-col place-content-center gap-y-6 md:mx-32 mx-12 my-16"
+                    >
+                        <input
+                            class=""
+                            type="text"
+                            id="nome"
+                            placeholder="Nome"
+                        />
+                        <textarea
+                            class=""
+                            placeholder="Mensagem"
+                            id="comentario"
+                        ></textarea>
+                        <button
+                            type="button"
+                            id="enviar"
+                            onclick="whatsapp();"
+                            class="btn flex justify-center mt-5"
+                        >
+                            Enviar
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </button>
                     </form>
                 </article>
-
-                <footer>
-                    <article class="p-3 mt-5" id="contato">
-                        <br />
-                        <hr style="border-color: white; padding: 10px" />
-                        <section id="redes" class="text-center">
-                            <a
-                                id="linkedin"
-                                href="https://linkedin.com/in/mdteixeira15"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    class="img_social"
-                                    src="./images/social/linkedin.png"
-                                    alt="linkedin"
-                                />
-                            </a>
-                            <a
-                                id="github"
-                                href="https://GitHub.com/mdteixeira"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                ><img
-                                    id="github"
-                                    class="img_social"
-                                    src="./images/social/github.png"
-                                    alt="github"
-                                />
-                            </a>
-                            <a
-                                href="mailto:matheusdiegoteixeira@gmail.com"
-                                id="mail"
-                                ><img
-                                    class="img_social"
-                                    src="./images/social/mail.png"
-                                    alt="mail"
-                                />
-                            </a>
-                            <a
-                                id="whatsapp"
-                                href="https://wa.me/5511993602212"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                ><img
-                                    id="whatsapp"
-                                    class="img_social"
-                                    src="./images/social/whatsapp.png"
-                                    alt="whatsapp"
-                                />
-                            </a>
-                        </section>
-                        <section id="copy" class="pt-5 text-white">
-                            © Feito por Matheus Diego Teixeira - 2023
-                            <br /><small
-                                >Código disponível no
-                                <a
-                                    href="http://github.com/mdteixeira/mdteixeira.github.io"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="link-secondary"
-                                    >GitHub</a
-                                >
-                            </small>
-                        </section>
-                    </article>
-                </footer>
             </main>
-        </div>
+            <footer data-aos="fade-down">
+                <article class="p-3 mt-8" id="contato">
+                    <section
+                        id="redes"
+                        class="text-center flex flex-wrap justify-center gap-7"
+                    >
+                        <a
+                            id="linkedin"
+                            href="https://linkedin.com/in/mdteixeira15"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="img_social"
+                                src="./assets/images/social/linkedin.png"
+                                alt="linkedin"
+                            />
+                        </a>
+                        <a
+                            id="github"
+                            href="https://GitHub.com/mdteixeira"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><img
+                                id="github"
+                                class="img_social"
+                                src="./assets/images/social/github.png"
+                                alt="github"
+                            />
+                        </a>
+                        <a
+                            href="mailto:matheusdiegoteixeira@gmail.com"
+                            id="mail"
+                            ><img
+                                class="img_social"
+                                src="./assets/images/social/mail.png"
+                                alt="mail"
+                            />
+                        </a>
+                        <a
+                            id="whatsapp"
+                            href="https://wa.me/5511993602212"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><img
+                                id="whatsapp"
+                                class="img_social"
+                                src="./assets/images/social/whatsapp.png"
+                                alt="whatsapp"
+                            />
+                        </a>
+                    </section>
+                    <section id="copy" class="pt-5 text-white text-center">
+                        © Feito por Matheus Diego Teixeira - 2023
+                        <br /><small
+                            >Código disponível no
+                            <a
+                                href="http://github.com/mdteixeira/mdteixeira.github.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-slate-400 underline hover:text-slate-300"
+                                >GitHub</a
+                            >
+                        </small>
+                    </section>
+                </article>
+            </footer>
+        </content>
+
+        <!-- To Top -->
+        <a class="hidden" id="toTop" href="#" role="button"
+            ><img
+                id="img1"
+                src="./assets/images/to-top.png"
+                alt="Imagem Scroll Up"
+        /></a>
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 1200 });
+        </script>
     </body>
 </html>

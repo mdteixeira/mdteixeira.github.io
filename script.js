@@ -2,7 +2,7 @@ function whatsapp() {
     var nome = document.getElementById('nome').value;
     var sobrenome = document.getElementById('sobrenome').value;
     var mensagem = document.getElementById('comentario').value;
-    var newnome = ''
+    var newnome = '';
 
     if (nome.length > 0) {
         newnome = '. Me chamo ' + nome;
@@ -10,8 +10,13 @@ function whatsapp() {
     if (sobrenome.length > 0) {
         newnome += ' ' + sobrenome;
     }
-    newnome += '.'
-    var url = 'https://wa.me/11993602212?text=' + 'Olá, Matheus' + newnome + ' ' + mensagem;
+    newnome += '.';
+    var url =
+        'https://wa.me/11993602212?text=' +
+        'Olá, Matheus' +
+        newnome +
+        ' ' +
+        mensagem;
 
     window.open(url, '_blank').focus();
 }
@@ -25,13 +30,9 @@ function scrollFunction() {
         document.body.scrollTop > 150 ||
         document.documentElement.scrollTop > 150
     ) {
-        document
-            .getElementById('toTop')
-            .classList.remove('visually-hidden');
+        document.getElementById('toTop').classList.remove('hidden');
     } else {
-        document
-            .getElementById('toTop')
-            .classList.add('visually-hidden');
+        document.getElementById('toTop').classList.add('hidden');
     }
 }
 
