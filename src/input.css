@@ -110,6 +110,7 @@ hr {
 .techs img {
     filter: invert(1) brightness(500%) saturate(0);
     width: 10%;
+    max-width: 20px
 }
 
 .btn {
@@ -160,6 +161,9 @@ input, textarea {
     margin-left: 1.5rem;
 }
 
+.img_social:hover {
+    filter: invert(0.5);
+}
 .img_social {
     height: 2.5rem;
     width: 2.5rem;
