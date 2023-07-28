@@ -79,8 +79,8 @@ hr {
     filter: opacity(0.75);
     z-index: 2;
     position: fixed;
-    right: 1.25vw;
-    bottom: 2vh;
+    right: 1.5rem;
+    bottom: 1.5rem;
     height: 45px;
     width: 45px;
     padding: 7px 0 0 0;
