@@ -946,9 +946,8 @@ hr {
 }
 
 .techs img {
-  filter: invert(1) brightness(500%) saturate(0);
-  width: 10%;
-  max-width: 20px
+  filter: invert(1) brightness(500%) grayscale(1);
+  height: 30px;
 }
 
 .btn {
@@ -1068,6 +1067,11 @@ input, textarea {
     padding: 0px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-\[3\.5rem\] {
     font-size: 3.5rem;
   }
@@ -1080,10 +1084,6 @@ input, textarea {
 
   .lg\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .lg\:grid {
-    display: grid;
   }
 
   .lg\:text-8xl {

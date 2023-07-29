@@ -8,7 +8,7 @@ function whatsapp() {
     }
     newnome += '.';
     var url =
-        'https://wa.me/11993602212?text=' +
+        'https://wa.me/5511993602212?text=' +
         'Olá, Matheus' +
         newnome +
         ' ' +
