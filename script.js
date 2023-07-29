@@ -37,3 +37,22 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+(function () {
+    var words = [
+            'Back-End',
+            'Mobile',
+        ],
+        i = 0;
+    setInterval(function () {
+        $('#carousel').fadeOut(function () {
+            $(this)
+                .html(
+                    words[
+                        (i = (i + 1) % words.length)
+                    ]
+                )
+                .fadeIn();
+        });
+    }, 3000);
+})();

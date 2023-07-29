@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./public/output.css" />
@@ -15,6 +15,7 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <style>
             .material-symbols-outlined {
                 font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
@@ -26,7 +27,7 @@
     <body class="font-Poppins bg-transparent text-slate-300">
         <content>
             <header id="section-1" class="header flex flex-col h-screen">
-                <section class="flex lg:mt-10 my-5 justify-evenly">
+                <section class="flex justify-evenly mt-10 md:text-4xl">
                     <a
                         target="_blank"
                         class="link"
@@ -34,7 +35,7 @@
                     >
                         <img
                             src="./assets/images/social/github.png"
-                            class="h-[40px] invert"
+                            class="h-[24px] invert"
                             alt=""
                         />GitHub</a
                     >
@@ -45,7 +46,7 @@
                     >
                         <img
                             src="./assets/images/social/cv.png"
-                            class="h-[40px] invert"
+                            class="h-[24px] invert"
                             alt=""
                         />Currículo</a
                     >
@@ -56,7 +57,7 @@
                     >
                         <img
                             src="./assets/images/social/linkedin.png"
-                            class="h-[40px] invert"
+                            class="h-[24px] invert"
                             alt=""
                         />LinkedIn</a
                     >
@@ -65,28 +66,65 @@
                     class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full text-slate-300"
                 >
                     <section
-                        class="left h-full text-center mx-3 flex flex-col justify-center"
+                        class="left h-full text-center mx-3 flex flex-col justify-evenly"
                     >
-                        <h1
-                            id="mainTitle"
-                            class="text-gray-300 font-bold lg:text-8xl text-6xl"
-                        >
-                            <span class="text-gd">&lt;</span>Matheus
-                            Teixeira<span class="text-gd">/&gt;</span>
-                        </h1>
-                        <h1
-                            id="mainTitle"
-                            class="text-gd font-bold lg:text-8xl text-6xl"
-                        ></h1>
-                        <hr />
+                        <div>
+                            <h1
+                                id="mainTitle"
+                                class="text-gray-300 font-bold lg:text-8xl text-6xl"
+                            >
+                                <span class="text-gd">&lt;</span>Matheus
+                                Teixeira<span class="text-gd">/&gt;</span>
+                            </h1>
+                            <h1
+                                id="mainTitle"
+                                class="text-gd font-bold lg:text-8xl text-6xl"
+                            ></h1>
+                            <hr />
 
-                        <h1 id="c-1" class="text-gd font-bold text-4xl">
-                            Front-End Developer
-                        </h1>
+                            <h1 id="c-1" class="text-gd font-bold text-4xl">
+                                <span></span>Front-End Developer
+                            </h1>
+                        </div>
+                        <section class="flex justify-evenly md:text-2xl gap-3 hidden">
+                            <a
+                                target="_blank"
+                                class="link"
+                                href="https://github.com/mdteixeira"
+                            >
+                                <img
+                                    src="./assets/images/social/github.png"
+                                    class="h-[24px] invert"
+                                    alt=""
+                                />GitHub</a
+                            >
+                            <a
+                                target="_blank"
+                                class="link"
+                                href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit"
+                            >
+                                <img
+                                    src="./assets/images/social/cv.png"
+                                    class="h-[24px] invert"
+                                    alt=""
+                                />Currículo</a
+                            >
+                            <a
+                                target="_blank"
+                                class="link"
+                                href="https://www.linkedin.com/in/mdteixeira15/"
+                            >
+                                <img
+                                    src="./assets/images/social/linkedin.png"
+                                    class="h-[24px] invert"
+                                    alt=""
+                                />LinkedIn</a
+                            >
+                        </section>
                     </section>
                     <figure class="right" data-aos="fade-left">
                         <img
-                            class="w-[50vw] md:w-[30vw] mt-5 p-2 border-purple-600 border-4 rounded-3xl"
+                            class="w-[55vw] md:w-[30vw] mt-5 p-2 border-purple-600 border-4 rounded-3xl"
                             src="/assets/images/mdteixeira.png"
                             alt="foto do Matheus Teixeira"
                         />
@@ -343,6 +381,7 @@
                                 >Conferir</a
                             >
                         </div>
+                        <div></div>
                         <div class="flex flex-col justify-center">
                             <a
                                 target="_blank"
@@ -391,7 +430,7 @@
                 </article>
             </main>
             <footer data-aos="fade-down">
-                <article class="p-3 mt-8" id="contato">
+                <article class="p-3 my-10" id="contato">
                     <section
                         id="redes"
                         class="text-center flex flex-wrap justify-center gap-7"
@@ -444,7 +483,6 @@
                     </section>
                     <section id="copy" class="pt-10 text-white text-center">
                         © Feito por Matheus Diego Teixeira utilizando
-                        <br />
                         <div class="techs my-5 flex justify-center gap-5">
                             <img
                                 src="./assets/images/html.png"
