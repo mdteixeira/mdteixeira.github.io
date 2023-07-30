@@ -42,6 +42,7 @@ li {
 .text-gd {
     background: #99009e;
     background: var(--gd);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
