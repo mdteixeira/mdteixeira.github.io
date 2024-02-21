@@ -1,535 +1,432 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./public/output.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <style>
-            .material-symbols-outlined {
-                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
-                    'opsz' 40;
-            }
-        </style>
-        <title>md.teixeira</title>
-    </head>
-    <body class="font-Poppins bg-transparent text-slate-300">
-        <content>
-            <header id="section-1" class="header flex flex-col h-screen">
-                <section class="flex justify-evenly mt-10 md:text-4xl">
-                    <a
-                        target="_blank"
-                        class="link"
-                        href="https://github.com/mdteixeira"
-                    >
-                        <img
-                            src="./assets/images/social/github.png"
-                            class="h-[24px] invert"
-                            alt=""
-                        />GitHub</a
-                    >
-                    <a
-                        target="_blank"
-                        class="link"
-                        href="https://docs.google.com/document/d/1Cu0TYreTDafTJtCAylEkFE2dIpYxd32-/edit?usp=sharing&ouid=108898827511156966062&rtpof=true&sd=true"
-                    >
-                        <img
-                            src="./assets/images/social/cv.png"
-                            class="h-[24px] invert"
-                            alt=""
-                        />Currículo</a
-                    >
-                    <a
-                        target="_blank"
-                        class="link"
-                        href="https://www.linkedin.com/in/mdteixeira15/"
-                    >
-                        <img
-                            src="./assets/images/social/linkedin.png"
-                            class="h-[24px] invert"
-                            alt=""
-                        />LinkedIn</a
-                    >
-                </section>
-                <section
-                    class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full text-slate-300"
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./public/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 40;
+      }
+    </style>
+    <title>md.teixeira</title>
+  </head>
+  <body class="font-Poppins bg-transparent text-slate-300 bg-indigo-950">
+    <content>
+      <header id="section-1" class="header flex flex-col h-screen">
+        <section class="flex justify-evenly mt-10 md:text-4xl">
+          <a target="_blank" class="link" href="https://github.com/mdteixeira">
+            <img
+              src="./assets/images/social/github.png"
+              class="h-[24px] invert"
+              alt=""
+            />GitHub</a
+          >
+          <a
+            target="_blank"
+            class="link"
+            href="https://docs.google.com/document/d/1Cu0TYreTDafTJtCAylEkFE2dIpYxd32-/edit?usp=sharing&ouid=108898827511156966062&rtpof=true&sd=true"
+          >
+            <img
+              src="./assets/images/social/cv.png"
+              class="h-[24px] invert"
+              alt=""
+            />Currículo</a
+          >
+          <a
+            target="_blank"
+            class="link"
+            href="https://www.linkedin.com/in/mdteixeira15/"
+          >
+            <img
+              src="./assets/images/social/linkedin.png"
+              class="h-[24px] invert"
+              alt=""
+            />LinkedIn</a
+          >
+        </section>
+        <section
+          class="grid md:grid-cols-1 md:place-content-center justify-items-center h-full text-slate-300"
+        >
+          <section class="left h-full text-center mx-3 flex flex-col justify-evenly">
+            <div>
+              <h1 id="mainTitle" class="text-gray-300 font-bold lg:text-8xl text-6xl">
+                <span class="text-gd">&lt;</span>Matheus Teixeira<span class="text-gd"
+                  >/&gt;</span
                 >
-                    <section
-                        class="left h-full text-center mx-3 flex flex-col justify-evenly"
-                    >
-                        <div>
-                            <h1
-                                id="mainTitle"
-                                class="text-gray-300 font-bold lg:text-8xl text-6xl"
-                            >
-                                <span class="text-gd">&lt;</span>Matheus
-                                Teixeira<span class="text-gd">/&gt;</span>
-                            </h1>
-                            <h1
-                                id="mainTitle"
-                                class="text-gd font-bold lg:text-8xl text-6xl"
-                            ></h1>
-                            <hr />
+              </h1>
+              <h1 id="mainTitle" class="text-gd font-bold lg:text-8xl text-6xl"></h1>
+              <hr />
 
-                            <h1 id="c-1" class="text-gd font-bold text-4xl">
-                                <span></span>Developer
-                            </h1>
-                        </div>
-                        <section
-                            class="flex justify-evenly md:text-2xl gap-3 hidden"
-                        >
-                            <a
-                                target="_blank"
-                                class="link"
-                                href="https://github.com/mdteixeira"
-                            >
-                                <img
-                                    src="./assets/images/social/github.png"
-                                    class="h-[24px] invert"
-                                    alt=""
-                                />GitHub</a
-                            >
-                            <a
-                                target="_blank"
-                                class="link"
-                                href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit"
-                            >
-                                <img
-                                    src="./assets/images/social/cv.png"
-                                    class="h-[24px] invert"
-                                    alt=""
-                                />Currículo</a
-                            >
-                            <a
-                                target="_blank"
-                                class="link"
-                                href="https://www.linkedin.com/in/mdteixeira15/"
-                            >
-                                <img
-                                    src="./assets/images/social/linkedin.png"
-                                    class="h-[24px] invert"
-                                    alt=""
-                                />LinkedIn</a
-                            >
-                        </section>
-                    </section>
-                    <figure class="right" data-aos="fade-left">
-                        <img
-                            class="w-[55vw] md:w-[30vw] mt-5 p-2 border-purple-600 border-4 rounded-3xl"
-                            src="/assets/images/mdteixeira2.jpg"
-                            alt="foto do Matheus Teixeira"
-                        />
-                    </figure>
-                </section>
-            </header>
-            <main>
-                <article data-aos="fade-down" class="md:my-32 my-5">
-                    <h1
-                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
-                    >
-                        Sobre mim
-                    </h1>
-                    <hr class="w-[25%]" />
-                    <section>
-                        <ul class="text-2xl mx-12 mt-10 lg:ml-32">
-                            <li>
-                                <span class="text-4xl">🙋🏻‍♂️ </span>
-                                <strong>19 anos</strong>
-                            </li>
-                            <li>
-                                <span class="text-4xl"> 👨‍💻 </span>
-                                Cursando o terceiro semestre de
-                                <strong>Ciência da Computação</strong>
-                            </li>
-                            <li>
-                                <span class="text-4xl"> 🧑‍🎓 </span>Formado em
-                                <strong>Automação Industrial</strong> pelo Liceu
-                                de Artes e Ofícios de São Paulo
-                            </li>
-                            <li>
-                                <span class="text-4xl"> 💜 </span>
-                                Apaixonado por
-                                <strong>tecnologia</strong> e
-                                <strong>música</strong>
-                            </li>
-                            <li>
-                                <span class="text-4xl">📍 </span> Moro na Zona
-                                Norte de São Paulo
-                            </li>
-                        </ul>
-                    </section>
-                </article>
+              <h1 id="c-1" class="text-gd font-bold text-4xl"><span></span>Developer</h1>
+            </div>
+            <section class="flex justify-evenly md:text-2xl gap-3 hidden">
+              <a target="_blank" class="link" href="https://github.com/mdteixeira">
+                <img
+                  src="./assets/images/social/github.png"
+                  class="h-[24px] invert"
+                  alt=""
+                />GitHub</a
+              >
+              <a
+                target="_blank"
+                class="link"
+                href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit"
+              >
+                <img
+                  src="./assets/images/social/cv.png"
+                  class="h-[24px] invert"
+                  alt=""
+                />Currículo</a
+              >
+              <a
+                target="_blank"
+                class="link"
+                href="https://www.linkedin.com/in/mdteixeira15/"
+              >
+                <img
+                  src="./assets/images/social/linkedin.png"
+                  class="h-[24px] invert"
+                  alt=""
+                />LinkedIn</a
+              >
+            </section>
+          </section>
+          <!-- <figure class="right" data-aos="fade-left">
+            <img
+              class="w-[55vw] md:w-[30vw] mt-5 p-2 border-purple-600 border-4 rounded-3xl"
+              src="/assets/images/mdteixeira2.jpg"
+              alt="foto do Matheus Teixeira"
+            />
+          </figure> -->
+        </section>
+      </header>
+      <main>
+        <article data-aos="fade-down" class="md:my-32 my-5">
+          <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+            Sobre mim
+          </h1>
+          <hr class="w-1/4" />
+          <section>
+            <ul class="text-2xl mx-auto mt-10 w-10/12 md:w-11/12">
+              <li>
+                <span class="text-4xl">🙋🏻‍♂️ </span>
+                <strong>19 anos</strong>
+              </li>
+              <li>
+                <span class="text-4xl"> 👨‍💻 </span>
+                Cursando o terceiro semestre de
+                <strong>Ciência da Computação</strong>
+              </li>
+              <li>
+                <span class="text-4xl"> 🧑‍🎓 </span>Formado em
+                <strong>Automação Industrial</strong> pelo Liceu de Artes e Ofícios de São
+                Paulo
+              </li>
+              <li>
+                <span class="text-4xl"> 💜 </span>
+                Apaixonado por
+                <strong>tecnologia</strong> e
+                <strong>música</strong>
+              </li>
+              <li><span class="text-4xl">📍 </span> Moro na Zona Norte de São Paulo</li>
+            </ul>
+          </section>
+        </article>
 
-                <article
-                    data-aos="fade-up"
-                    class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full my-48"
-                >
-                    <section class="left flex flex-col justify-around">
-                        <div>
-                            <h1
-                                class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
-                            >
-                                Tecnologias
-                            </h1>
-                            <hr />
+        <article
+          data-aos="fade-up"
+          class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full my-48"
+        >
+          <section class="left flex flex-col justify-around">
+            <div>
+              <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+                Front-end
+              </h1>
+              <hr />
 
-                            <h1 class="text-2xl mx-12 mt-10 lg:ml-32">
-                                Estas são algumas das tecnologias que sei
-                                utilizar na área de
-                                <span class="font-bold"
-                                    >contrução de websites.</span
-                                >
-                            </h1>
-                        </div>
-                        <ul
-                            class="grid-cols-3 text-center md:text-2xl text-gd font-bold grid mx-auto mt-8"
-                            id="tecnologias"
-                        >
-                            <li>Bootstrap</li>
-                            <li>Django</li>
-                            <li>Figma</li>
-                            <li>HTML</li>
-                            <li>React</li>
-                            <li>TailwindCSS</li>
-                            <li>CSS</li>
-                            <li>Flutter</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </section>
-                    <figure class="right">
-                        <img
-                            src="./assets/images/tecnologias3.png"
-                            alt="logo de algumas tecnologias"
-                            class="p-10 md:p-0"
-                        />
-                    </figure>
-                </article>
-                <article data-aos="fade-up" class="mt-32">
-                    <h1
-                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
-                    >
-                        Projetos
-                    </h1>
-                    <hr class="w-[25%]" />
-                    <div
-                        class="container grid mx-auto md:grid-cols-3 md:gap-y-9 justify-items-center mt-16"
-                    >
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">NewOdonto</h2>
-                            <img
-                                src="./assets/images/newOdonto.png"
-                                alt="visão de uma página da web"
-                            />
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/bootstrap.png"
-                                    alt="bootstrap logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/Site-TCC/NewOdonto/index.html"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">
-                                Santa Inês Tap House
-                            </h2>
-                            <img
-                                src="./assets/images/TapHouse.png"
-                                alt="visão de uma página da web"
-                            />
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/bootstrap.png"
-                                    alt="bootstrap logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/Site-TCC/TapHouse/index.html"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">Calculadora IMC</h2>
-                            <img
-                                src="./assets/images/imc.png"
-                                alt="visão de uma página da web"
-                            />
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/bootstrap.png"
-                                    alt="bootstrap logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/CalculadoraIMC"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">YouTravel</h2>
-                            <img
-                                src="./assets/images/YouTravel.png"
-                                alt="visão de uma página da web"
-                            />
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/react.png"
-                                    alt="react logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/YouTravel"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">
-                                Agenda de Tarefas
-                            </h2>
-                            <img
-                                src="./assets/images/to-do.png"
-                                alt="visão de uma página da web"
-                            />
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/react.png"
-                                    alt="react logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/to-do/"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div class="card" data-aos="fade-right">
-                            <h2 class="text-xl text-center">FrontEnd Mentor</h2>
-                            <h3 class="h-full text-center text-xl">
-                                Alguns desafios que fiz do
-                                <span class="font-bold">FrontEnd Mentor</span>
-                            </h3>
-                            <div class="techs my-5 flex justify-evenly">
-                                <img
-                                    src="./assets/images/html.png"
-                                    alt="html logo"
-                                />
-                                <img
-                                    src="./assets/images/css.png"
-                                    alt="css logo"
-                                />
-                                <img
-                                    src="./assets/images/bootstrap.png"
-                                    alt="bootstrap logo"
-                                />
-                            </div>
-                            <a
-                                target="_blank"
-                                href="https://mdteixeira.github.io/FrontEnd-mentor/"
-                                class="btn text-gd"
-                                >Conferir</a
-                            >
-                        </div>
-                        <div></div>
-                        <div class="flex flex-col justify-center">
-                            <a
-                                target="_blank"
-                                href="https://github.com/mdteixeira"
-                                class="btn"
-                                data-aos="fade-up"
-                            >
-                                Acesse meu GitHub
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article data-aos="fade-up" class="mt-32">
-                    <h1
-                        class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center"
-                    >
-                        Contato
-                    </h1>
-                    <hr class="w-[25%]" />
-                    <form
-                        class="flex flex-col place-content-center gap-y-6 md:mx-32 mx-12 my-16"
-                    >
-                        <input
-                            class=""
-                            type="text"
-                            id="nome"
-                            placeholder="Nome"
-                        />
-                        <textarea
-                            class=""
-                            placeholder="Mensagem"
-                            id="comentario"
-                        ></textarea>
-                        <button
-                            type="button"
-                            id="enviar"
-                            onclick="whatsapp();"
-                            class="btn flex justify-center mt-5"
-                        >
-                            Enviar
-                            <span class="material-symbols-outlined">
-                                chevron_right
-                            </span>
-                        </button>
-                    </form>
-                </article>
-            </main>
-            <footer data-aos="fade-down">
-                <article class="p-3 my-10" id="contato">
-                    <section
-                        id="redes"
-                        class="text-center flex flex-wrap justify-center gap-7"
-                    >
-                        <a
-                            id="linkedin"
-                            href="https://linkedin.com/in/mdteixeira15"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                class="img_social"
-                                src="./assets/images/social/linkedin.png"
-                                alt="linkedin"
-                            />
-                        </a>
-                        <a
-                            id="github"
-                            href="https://GitHub.com/mdteixeira"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            ><img
-                                id="github"
-                                class="img_social"
-                                src="./assets/images/social/github.png"
-                                alt="github"
-                            />
-                        </a>
-                        <a
-                            href="mailto:matheusdiegoteixeira@gmail.com"
-                            id="mail"
-                            ><img
-                                class="img_social"
-                                src="./assets/images/social/mail.png"
-                                alt="mail"
-                            />
-                        </a>
-                        <a
-                            id="whatsapp"
-                            href="https://wa.me/5511993602212"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            ><img
-                                id="whatsapp"
-                                class="img_social"
-                                src="./assets/images/social/whatsapp.png"
-                                alt="whatsapp"
-                            />
-                        </a>
-                    </section>
-                    <section id="copy" class="pt-10 text-white text-center">
-                        © Feito por Matheus Diego Teixeira utilizando
-                        <div class="techs my-5 flex justify-center gap-5">
-                            <img
-                                src="./assets/images/html.png"
-                                alt="html logo"
-                            />
-                            <img src="./assets/images/css.png" alt="css logo" />
-                            <img
-                                src="./assets/images/tailwind.png"
-                                alt="tailwind logo"
-                            />
-                        </div>
-                        <small
-                            >Código disponível no
-                            <a
-                                href="http://github.com/mdteixeira/mdteixeira.github.io"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-slate-400 underline hover:text-slate-300"
-                                >GitHub</a
-                            >
-                        </small>
-                    </section>
-                </article>
-            </footer>
-        </content>
+              <h1 class="text-2xl mx-12 text-center">
+                Estas são algumas das tecnologias que sei utilizar na área de
+                <span class="font-bold">Front-end</span>
+              </h1>
+            </div>
+            <ul
+              class="grid-cols-3 text-center md:text-2xl text-gd font-bold grid mx-auto mt-8"
+              id="front-end"
+            >
+              <li>Bootstrap</li>
+              <li>Django</li>
+              <li>Figma</li>
+              <li>HTML</li>
+              <li>React</li>
+              <li>Tailwind</li>
+              <li>CSS</li>
+              <li>Flutter</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+          <hr class="block py-10 opacity-0 border-opacity-0 sm:hidden" />
 
-        <!-- To Top -->
-        <a class="hidden" id="toTop" href="#" role="button"
-            ><img
-                id="img1"
-                src="./assets/images/to-top.png"
-                alt="Imagem Scroll Up"
-        /></a>
-        <script src="script.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({ duration: 1200 });
-        </script>
-    </body>
+          <section class="left flex flex-col justify-around">
+            <div>
+              <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+                Back-end
+              </h1>
+              <hr />
+              <h1 class="text-2xl mx-12 text-center">
+                Estas são algumas das tecnologias que sei utilizar na área de
+                <span class="font-bold">Back-end</span>
+              </h1>
+            </div>
+            <ul
+              class="grid-cols-3 text-center md:text-2xl text-gd font-bold grid mx-auto mt-8"
+              id="back-end"
+            >
+              <li>Java</li>
+              <li>MySQL</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>.NET</li>
+              <li>Spring</li>
+              <li>Node.js</li>
+            </ul>
+          </section>
+        </article>
+        <article data-aos="fade-up" class="mt-32">
+          <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+            Projetos
+          </h1>
+          <hr class="w-1/4" />
+          <div
+            class="container grid mx-auto md:grid-cols-3 md:gap-y-9 gap-3 *:mx-6 justify-items-center mt-16"
+          >
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/newOdonto.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/bootstrap.png" alt="bootstrap logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/Site-TCC/NewOdonto/index.html"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/TapHouse.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/bootstrap.png" alt="bootstrap logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/Site-TCC/TapHouse/index.html"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <!-- <div class="card" data-aos="fade-right">
+              <img src="./assets/images/imc.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/bootstrap.png" alt="bootstrap logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/CalculadoraIMC"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div> -->
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/YouTravel.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/react.png" alt="react logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/YouTravel"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/to-do.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/react.png" alt="react logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/to-do/"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/zetaBlog.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/react.png" alt="react logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://blogpessoal-zeta.vercel.app"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/AjudaQuemFaz.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/react.png" alt="react logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://ajudaquemfaz.netlify.app/home"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+            <div class="card w-10/12" data-aos="fade-right">
+              <h3 class="h-full text-center text-xl">
+                Alguns desafios que fiz do
+                <span class="font-bold flex flex-col">FrontEnd Mentor</span>
+              </h3>
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/html.png" alt="html logo" />
+                <img src="./assets/images/css.png" alt="css logo" />
+                <img src="./assets/images/bootstrap.png" alt="bootstrap logo" />
+              </div>
+              <a
+                target="_blank"
+                href="https://mdteixeira.github.io/FrontEnd-mentor/"
+                class="btn text-gd"
+                >Conferir</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col justify-center mt-5">
+            <a
+              target="_blank"
+              href="https://github.com/mdteixeira"
+              class="btn mt-5"
+              data-aos="fade-up"
+            >
+              Acesse meu GitHub
+            </a>
+          </div>
+        </article>
+        <article data-aos="fade-up" class="mt-32">
+          <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+            Contato
+          </h1>
+          <hr class="w-1/4" />
+          <form class="flex flex-col place-content-center gap-y-6 md:mx-32 mx-12 my-16">
+            <input class="" type="text" id="nome" placeholder="Nome" />
+            <textarea class="" placeholder="Mensagem" id="comentario"></textarea>
+            <button
+              type="button"
+              id="enviar"
+              onclick="whatsapp();"
+              class="btn inline-flex items-center mt-5"
+            >
+              <p>Enviar</p>
+            </button>
+          </form>
+        </article>
+      </main>
+      <footer data-aos="fade-down">
+        <article class="p-3 my-10" id="contato">
+          <section id="redes" class="text-center flex flex-wrap justify-center gap-7">
+            <a
+              id="linkedin"
+              href="https://linkedin.com/in/mdteixeira15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="img_social"
+                src="./assets/images/social/linkedin.png"
+                alt="linkedin"
+              />
+            </a>
+            <a
+              id="github"
+              href="https://GitHub.com/mdteixeira"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                id="github"
+                class="img_social"
+                src="./assets/images/social/github.png"
+                alt="github"
+              />
+            </a>
+            <a href="mailto:matheusdiegoteixeira@gmail.com" id="mail"
+              ><img class="img_social" src="./assets/images/social/mail.png" alt="mail" />
+            </a>
+            <a
+              id="whatsapp"
+              href="https://wa.me/5511993602212"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                id="whatsapp"
+                class="img_social"
+                src="./assets/images/social/whatsapp.png"
+                alt="whatsapp"
+              />
+            </a>
+          </section>
+          <section id="copy" class="pt-10 text-white text-center">
+            © Feito por Matheus Diego Teixeira utilizando
+            <div class="techs my-5 flex justify-center gap-5">
+              <img src="./assets/images/html.png" alt="html logo" />
+              <img src="./assets/images/css.png" alt="css logo" />
+              <img src="./assets/images/tailwind.png" alt="tailwind logo" />
+            </div>
+            <small
+              >Código disponível no
+              <a
+                href="http://github.com/mdteixeira/mdteixeira.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-400 underline hover:text-slate-300"
+                >GitHub</a
+              >
+            </small>
+          </section>
+        </article>
+      </footer>
+    </content>
+
+    <!-- To Top -->
+    <a class="hidden" id="toTop" href="#" role="button"
+      ><img id="img1" src="./assets/images/to-top.png" alt="Imagem Scroll Up"
+    /></a>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+    </script>
+  </body>
 </html>
