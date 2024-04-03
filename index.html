@@ -37,7 +37,7 @@
           <a
             target="_blank"
             class="link"
-            href="https://docs.google.com/document/d/1Cu0TYreTDafTJtCAylEkFE2dIpYxd32-/edit?usp=sharing&ouid=108898827511156966062&rtpof=true&sd=true"
+            href="https://docs.google.com/document/d/1O6R3QjuWhbaRWUf9KC6koJDGAtrjSI1xxlpKnQpXrBs/edit?usp=sharing"
           >
             <img
               src="./assets/images/social/cv.png"
@@ -70,7 +70,7 @@
               <h1 id="mainTitle" class="text-gd font-bold lg:text-8xl text-6xl"></h1>
               <hr />
 
-              <h1 id="c-1" class="text-gd font-bold text-4xl"><span></span>Developer</h1>
+              <h1 id="c-1" class="text-gd font-bold text-4xl">Full-Stack Developer</h1>
             </div>
             <section class="flex justify-evenly md:text-2xl gap-3 hidden">
               <a target="_blank" class="link" href="https://github.com/mdteixeira">
@@ -83,7 +83,7 @@
               <a
                 target="_blank"
                 class="link"
-                href="https://docs.google.com/document/d/1_uJ05RRBych5Frx3XiAoJYc--IvnH9cr/edit"
+                href="https://docs.google.com/document/d/1O6R3QjuWhbaRWUf9KC6koJDGAtrjSI1xxlpKnQpXrBs"
               >
                 <img
                   src="./assets/images/social/cv.png"
@@ -163,7 +163,7 @@
               </h1>
             </div>
             <ul
-              class="grid-cols-3 text-center md:text-2xl text-gd font-bold grid mx-auto mt-8"
+              class="w-full gap-3 flex-wrap text-center md:text-2xl text-gd font-bold grid grid-cols-3 mx-auto mt-8"
               id="front-end"
             >
               <li>Bootstrap</li>
@@ -191,7 +191,7 @@
               </h1>
             </div>
             <ul
-              class="grid-cols-3 text-center md:text-2xl text-gd font-bold grid mx-auto mt-8"
+              class="w-full gap-3 flex-wrap text-center md:text-2xl text-gd font-bold grid grid-cols-3 mx-auto mt-8"
               id="back-end"
             >
               <li>Java</li>
@@ -201,17 +201,58 @@
               <li>.NET</li>
               <li>Spring</li>
               <li>Node.js</li>
+              <li>Firebase</li>
             </ul>
           </section>
         </article>
-        <article data-aos="fade-up" class="mt-32">
-          <h1 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
+        <article data-aos="fade-up" class="mt-32" id="projetos">
+          <h2 class="text-gd font-bold md:text-[3.5rem] text-[2.5rem] text-center">
             Projetos
-          </h1>
+          </h2>
           <hr class="w-1/4" />
+          <h3 class="text-center text-xl">
+            Esses são apenas alguns dos projetos que desenvolvi, veja todos em meu
+            <a
+              href="https://github.com/mdteixeira"
+              class="text-neutral-100 hover:text-neutral-200 underline"
+              >GitHub</a
+            >
+          </h3>
           <div
             class="container grid mx-auto md:grid-cols-3 md:gap-y-9 gap-3 *:mx-6 justify-items-center mt-16"
           >
+            <div class="card" data-aos="fade-right">
+              <img src="./assets/images/AjudaQuemFaz.png" alt="" class="rounded-2xl" />
+              <div class="techs my-5 flex justify-evenly">
+                <img src="./assets/images/react.png" alt="react logo" />
+                <img
+                  src="https://static-00.iconduck.com/assets.00/typescript-icon-2048x2048-xuhk7bep.png"
+                  alt="TypeScript logo"
+                />
+                <img
+                  src="https://www.bridgetech.co.id/storage/2021/02/spring-logo-400x400.png"
+                  alt="Spring logo"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/154/154878.png"
+                  alt="Java logo"
+                />
+              </div>
+              <div class="flex">
+                <a
+                  target="_blank"
+                  href="https://ajudaquemfaz.netlify.app/home"
+                  class="btn text-gd"
+                  >Conferir</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/Ajuda-Quem-Faz"
+                  class="border-purple-500 text-white text-xl rounded-2xl mx-auto grid items-center px-3 font-bold border-2 hover:bg-purple-500"
+                  >Repositório</a
+                >
+              </div>
+            </div>
             <div class="card" data-aos="fade-right">
               <img src="./assets/images/newOdonto.png" alt="" class="rounded-2xl" />
               <div class="techs my-5 flex justify-evenly">
@@ -240,8 +281,12 @@
                 >Conferir</a
               >
             </div>
-            <!-- <div class="card" data-aos="fade-right">
-              <img src="./assets/images/imc.png" alt="" class="rounded-2xl" />
+            <div class="card" data-aos="fade-right">
+              <img
+                src="./assets/images/calculadora.png"
+                alt=""
+                class="rounded-2xl h-max"
+              />
               <div class="techs my-5 flex justify-evenly">
                 <img src="./assets/images/html.png" alt="html logo" />
                 <img src="./assets/images/css.png" alt="css logo" />
@@ -253,7 +298,7 @@
                 class="btn text-gd"
                 >Conferir</a
               >
-            </div> -->
+            </div>
             <div class="card" data-aos="fade-right">
               <img src="./assets/images/YouTravel.png" alt="" class="rounded-2xl" />
               <div class="techs my-5 flex justify-evenly">
@@ -286,31 +331,42 @@
               <img src="./assets/images/zetaBlog.png" alt="" class="rounded-2xl" />
               <div class="techs my-5 flex justify-evenly">
                 <img src="./assets/images/react.png" alt="react logo" />
+                <img
+                  src="https://static-00.iconduck.com/assets.00/typescript-icon-2048x2048-xuhk7bep.png"
+                  alt="TypeScript logo"
+                />
+                <img
+                  src="https://www.bridgetech.co.id/storage/2021/02/spring-logo-400x400.png"
+                  alt="Spring logo"
+                />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/154/154878.png"
+                  alt="Java logo"
+                />
               </div>
-              <a
-                target="_blank"
-                href="https://blogpessoal-zeta.vercel.app"
-                class="btn text-gd"
-                >Conferir</a
-              >
-            </div>
-            <div class="card" data-aos="fade-right">
-              <img src="./assets/images/AjudaQuemFaz.png" alt="" class="rounded-2xl" />
-              <div class="techs my-5 flex justify-evenly">
-                <img src="./assets/images/react.png" alt="react logo" />
+              <div class="flex">
+                <a
+                  target="_blank"
+                  href="https://blogpessoal-zeta.vercel.app"
+                  class="btn text-gd"
+                  >Conferir</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/mdteixeira?tab=repositories&q=blog&type=&language=&sort="
+                  class="border-purple-500 text-white text-xl rounded-2xl mx-auto grid items-center px-3 font-bold border-2 hover:bg-purple-500"
+                  >Repositório</a
+                >
               </div>
-              <a
-                target="_blank"
-                href="https://ajudaquemfaz.netlify.app/home"
-                class="btn text-gd"
-                >Conferir</a
-              >
             </div>
+
             <div class="card w-10/12" data-aos="fade-right">
-              <h3 class="h-full text-center text-xl">
-                Alguns desafios que fiz do
-                <span class="font-bold flex flex-col">FrontEnd Mentor</span>
-              </h3>
+              <div class="h-full grid items-center">
+                <h3 class="text-center text-xl">
+                  Confira também alguns dos desafios que fiz do
+                  <span class="font-bold flex flex-col">FrontEnd Mentor</span>
+                </h3>
+              </div>
               <div class="techs my-5 flex justify-evenly">
                 <img src="./assets/images/html.png" alt="html logo" />
                 <img src="./assets/images/css.png" alt="css logo" />
